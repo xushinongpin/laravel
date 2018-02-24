@@ -6,3 +6,27 @@
 
 【php artisan serve 提示 （ErrorException  : passthru\(\) has been disabled for security reasons.....）】
 
+#### Apache
+
+      .htaccess
+
+     Options +FollowSymLinks
+
+     RewriteEngine On
+
+
+
+     RewriteCond %{REQUEST\_FILENAME} !-d
+
+     RewriteCond %{REQUEST\_FILENAME} !-f
+
+     RewriteRule ^ index.php \[L\]
+
+#### Nginx
+
+     location / {
+
+         try\_files $uri $uri/ /index.php?$query\_string;
+
+     }
+
