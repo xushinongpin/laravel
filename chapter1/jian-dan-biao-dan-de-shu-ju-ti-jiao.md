@@ -21,7 +21,7 @@ public function csrf(){
 
 
 
-public function tocsrf\(Request $request\){
+public function tocsrf(Request $request){
 
     var_dump($request['text']);
 
