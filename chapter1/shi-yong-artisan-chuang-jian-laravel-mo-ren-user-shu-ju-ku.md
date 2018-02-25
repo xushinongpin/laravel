@@ -8,7 +8,7 @@
  添加一条或多条数据尝试查找【 命令行或者 】
 ```
 
-**创建控制器【 User控制器，Home/UserController 控制器在 app/Http/Controllers/Home/ 目录下 】**
+**创建控制器【 User控制器，Home/UserController 控制器会生成在 app/Http/Controllers/Home/ 目录下 】**
 
      php artisan make:controller Home/UserController
 
