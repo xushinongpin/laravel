@@ -10,7 +10,7 @@ return 'Hello World';
 
 }\);
 
-**使用SQLite数据库的创建方法【 建议使用mysql，**SQLite致力于为单个应用程序和设备提供本地数据存储，具体作用请浏览https://www.sqlite.org/whentouse.html** 】**
+**使用SQLite数据库的创建方法【 建议使用mysql，**SQLite致力于为单个应用程序和设备提供本地数据存储，具体作用请浏览 [官方解析](https://www.sqlite.org/whentouse.html)】
 
 ①touch database/database.sqlite
 
