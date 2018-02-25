@@ -10,3 +10,13 @@ return 'Hello World';
 
 }\);
 
+**使用SQLite数据库的创建方法**
+
+①touch database/database.sqlite
+
+②修改.env
+
+     DB\_CONNECTION=sqlite
+
+     DB\_DATABASE=/absolute/path/to/database.sqlite
+
