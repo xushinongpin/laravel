@@ -2,10 +2,11 @@
 
 命令行 去到项目根目录执行下面命令
 
-     php artisan migrate
+```
+ php artisan migrate
 
-     添加一条或多条数据尝试查找
-     insert into users (`name`,`email`,`password`,`remember_token`,`created_at`,`updated_at`) values ('test','test@qq.com','werwerw','111','2018-02-20 22:45:19','2018-02-20 22:45:19');
+ 添加一条或多条数据尝试查找【 命令行或者 】
+```
 
 **创建控制器【 User控制器 】**
 
