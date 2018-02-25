@@ -30,5 +30,7 @@ return 'Hello World';
  php artisan migrate
 ```
 
+创建控制器【 User控制器 】
 
+     php artisan make:controller Home/UserController
 
