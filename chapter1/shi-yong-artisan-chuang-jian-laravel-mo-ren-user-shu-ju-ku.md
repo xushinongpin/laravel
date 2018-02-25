@@ -38,9 +38,5 @@
  Route::get('/user', '\App\Http\Controllers\Home\UserController@index');
 ```
 
-
-
-http://domain/user  你的访问路径访问【 domain是你的访问地址 】
-
-
+[/user](http://domain/user)  你的访问路径访问
 
