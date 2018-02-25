@@ -1,3 +1,10 @@
-# First Chapter
+# 简单的路由【 routes/web.php 】
 
-GitBook allows you to organize your book into chapters, each chapter is stored in a separate file like this one.
+添加 /foo 的访问路径
+
+Route::get\('foo', function \(\) {
+
+    return 'Hello World';
+
+}\);
+
