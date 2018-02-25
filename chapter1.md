@@ -10,13 +10,17 @@ return 'Hello World';
 
 }\);
 
-**使用SQLite数据库的创建方法**
+**使用SQLite数据库的创建方法【 建议使用mysql，**SQLite致力于为单个应用程序和设备提供本地数据存储** 】**
 
 ①touch database/database.sqlite
 
 ②修改.env
 
-     DB\_CONNECTION=sqlite
+```
+ DB\_CONNECTION=sqlite
 
-     DB\_DATABASE=/absolute/path/to/database.sqlite
+ DB\_DATABASE=/absolute/path/to/database.sqlite
+```
+
+
 
