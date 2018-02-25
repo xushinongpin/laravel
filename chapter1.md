@@ -36,5 +36,7 @@ return 'Hello World';
  php artisan make:controller Home/UserController
 ```
 
+**添加路由**
 
+     Route::get\('/user', '\App\Http\Controllers\Home\UserController@index'\);
 
