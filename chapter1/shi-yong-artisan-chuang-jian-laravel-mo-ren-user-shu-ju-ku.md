@@ -38,5 +38,5 @@
  Route::get('/user', '\App\Http\Controllers\Home\UserController@index');
 ```
 
-/user  你的访问路径访问
+/user  你的访问路径
 
