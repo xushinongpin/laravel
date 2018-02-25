@@ -1,6 +1,6 @@
 **创建默认的数据库**
 
-去到项目根目录执行下面命令
+命令行 去到项目根目录执行下面命令
 
      php artisan migrate
 
@@ -11,7 +11,7 @@
 
 ```
  php artisan make:controller Home/UserController
- 
+
  尝试
 <?php
 
@@ -24,11 +24,10 @@ use App\Http\Controllers\Controller;
 class UserController extends Controller
 {
     public function index(){
-    	$users = DB::select('select * from users');
-    	return $users;
+        $users = DB::select('select * from users');
+        return $users;
     }
 }
-
 ```
 
 **添加路由**
