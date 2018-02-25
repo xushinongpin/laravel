@@ -51,15 +51,15 @@ public function tocsrf\(Request $request\){
 &lt;body&gt;
 
 ```
-&lt;form method="POST" action="/csrf"&gt;
+<form method="POST" action="/csrf">
 
-    {{csrf\_field\(\)}}
+    {{csrf_field()}}
 
-    &lt;input type="text" name="text" value="text"&gt;
+    <input type="text" name="text" value="text">
 
-    &lt;input type="submit" value="submit"&gt;
+    <input type="submit" value="submit">
 
-&lt;/form&gt;
+</form>
 ```
 
 &lt;/body&gt;
@@ -75,9 +75,9 @@ public function tocsrf\(Request $request\){
 &lt;head&gt;
 
 ```
-&lt;title&gt;test csrf submitted&lt;/title&gt;
+<title>test csrf submitted</title>
 
-&lt;meta name="csrf-token" content="{{ csrf\_token\(\) }}"&gt; 
+<meta name="csrf-token" content="{{ csrf_token() }}">
 ```
 
 &lt;/head&gt;
@@ -85,13 +85,13 @@ public function tocsrf\(Request $request\){
 &lt;body&gt;
 
 ```
-&lt;form method="POST" action="/csrf"&gt;
+<form method="POST" action="/csrf">
 
-    &lt;input type="text" name="text" value="text"&gt;
+    <input type="text" name="text" value="text">
 
-    &lt;input type="submit" value="submit"&gt;
+    <input type="submit" value="submit">
 
-&lt;/form&gt;
+</form>
 ```
 
 &lt;/body&gt;
