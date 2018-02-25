@@ -18,17 +18,17 @@
     namespace App\Http\Controllers\Home;
 
     use Illuminate\Http\Request;
-    use Illuminate\Support\Facades\DB;
+    use Illuminate\Support\Facades\DB;//这个需要添加，用于连接数据库
     use App\Http\Controllers\Controller;
 
     class UserController extends Controller
     {
         public function index(){
-        	$time = time();
-        	$date = date("Y-m-d H:i:s",$time);
-        	$users = DB::insert("insert into users (`name`,`email`,`password`,`remember_token`,`created_at`,`updated_at`) values ('{$time}','{$time}@qq.com','{$time}','{$time}','{$date}','{$date}');");
-        	$users = DB::select('select * from users');
-        	return $users;
+            $time = time();
+            $date = date("Y-m-d H:i:s",$time);
+            $users = DB::insert("insert into users (`name`,`email`,`password`,`remember_token`,`created_at`,`updated_at`) values ('{$time}','{$time}@qq.com','{$time}','{$time}','{$date}','{$date}');");
+            $users = DB::select('select * from users');
+            return $users;
         }
     }
 
