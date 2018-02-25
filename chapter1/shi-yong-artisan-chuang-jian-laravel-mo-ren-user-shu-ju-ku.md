@@ -26,8 +26,8 @@
         public function index(){
             $time = time();
             $date = date("Y-m-d H:i:s",$time);
-            $users = DB::insert("insert into users (`name`,`email`,`password`,`remember_token`,`created_at`,`updated_at`) values ('{$time}','{$time}@qq.com','{$time}','{$time}','{$date}','{$date}');");
-            $users = DB::select('select * from users');
+            $users = DB::insert("insert into users (`name`,`email`,`password`,`remember_token`,`created_at`,`updated_at`) values ('{$time}','{$time}@qq.com','{$time}','{$time}','{$date}','{$date}');");//随时生成一条数据用于判断会否已写入
+            $users = DB::select('select * from users');//查询数据
             return $users;
         }
     }
