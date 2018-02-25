@@ -41,7 +41,7 @@ return 'Hello World';
 **添加路由**
 
 ```
- Route::get\('/user', '\App\Http\Controllers\Home\UserController@index'\);
+ Route::get('/user', '\App\Http\Controllers\Home\UserController@index');
 ```
 
 
