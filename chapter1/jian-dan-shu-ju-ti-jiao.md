@@ -2,37 +2,31 @@
 
 &lt;?php
 
-
-
 namespace App\Http\Controllers\Home;
-
-
 
 use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 
-
-
 class TestController extends Controller
 
 {
 
-	public function csrf\(\){
+```
+public function csrf(){
 
-		return view\('test/csrf'\);
-
-	}
-
-
-
-    public function tocsrf\(Request $request\){
-
-    	dd\($request\);
-
-    }
+    return view('test/csrf');
 
 }
 
 
+
+public function tocsrf(Request $request){
+
+    dd($request);//dd 是dump and die 的简写
+
+}
+```
+
+}
 
