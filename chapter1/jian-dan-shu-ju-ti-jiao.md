@@ -30,3 +30,5 @@ public function tocsrf(Request $request){
 
 }
 
+创建模板【在/resources/views/ 里面创建test 目录 并在 test创建 csrf.blade.php 文件】
+
