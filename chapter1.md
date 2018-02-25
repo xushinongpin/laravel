@@ -22,6 +22,8 @@ return 'Hello World';
  DB\_DATABASE=/absolute/path/to/database.sqlite
 ```
 
+## **实现第一个读取数据库信息的方法**
+
 **创建默认的数据库**
 
 去到项目根目录执行下面命令
@@ -38,5 +40,9 @@ return 'Hello World';
 
 **添加路由**
 
-     Route::get\('/user', '\App\Http\Controllers\Home\UserController@index'\);
+```
+ Route::get\('/user', '\App\Http\Controllers\Home\UserController@index'\);
+```
+
+
 
