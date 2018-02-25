@@ -22,5 +22,9 @@ return 'Hello World';
  DB\_DATABASE=/absolute/path/to/database.sqlite
 ```
 
+创建默认的数据库
 
+去到项目根目录执行下面命令
+
+     php artisan migrate
 
