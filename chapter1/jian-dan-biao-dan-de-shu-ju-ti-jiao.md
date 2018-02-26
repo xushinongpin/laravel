@@ -66,35 +66,3 @@ public function tocsrf(Request $request){
 
 &lt;/html&gt;
 
-方法二：协议头填写csrf
-
-&lt;!DOCTYPE html&gt;
-
-&lt;html&gt;
-
-&lt;head&gt;
-
-```
-<title>test csrf submitted</title>
-
-<meta name="csrf-token" content="{{ csrf_token() }}">
-```
-
-&lt;/head&gt;
-
-&lt;body&gt;
-
-```
-<form method="POST" action="/csrf">
-
-    <input type="text" name="text" value="text">
-
-    <input type="submit" value="submit">
-
-</form>
-```
-
-&lt;/body&gt;
-
-&lt;/html&gt;
-
