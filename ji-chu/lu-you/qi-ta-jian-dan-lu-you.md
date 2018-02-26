@@ -60,13 +60,13 @@ return view('test/csrf',['name' => 'postId'.$postId.'-commentId'.$commentId]);
 
 }\);
 
-
-
-//传递可有可无的参数
+//传递可有可无的参数
 
 Route::get\('test/{name?}',function\($name = 'John'\){
 
-	return time\(\).'-'.$name;
+```
+return time().'-'.$name;
+```
 
 }\);
 
