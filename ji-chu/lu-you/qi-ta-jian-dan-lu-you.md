@@ -32,7 +32,7 @@ DB_DATABASE=/absolute/path/to/database.sqlite
 
 ```
 Route::view('/welcome','welcome');
-Route::view('/welcome','welcome',['name'=>'test']);//其中在视图中可以打印传来的值  {{ $name}} 
+Route::view('/welcome','welcome',['name'=>'test']);//其中在视图中可以打印传来的值  {{ $name}}
 ```
 
 ##### //可以获取url传来的单个参数
@@ -71,6 +71,20 @@ Route::get('user/{id}',function($id){
 Route::get('posts/{post}/comments/{comment}',function($postId,$commentId){
     return view('test/csrf',['name' => 'postId'.$postId.'-commentId'.$commentId]);
 })->where(['post'=>'[0-9]+','comment'=>'[A-Za-z]+']);
+```
+
+##### //定义所有路由遵循这个规则，则在 /app/Providers/RouteServiceProvider.php 下修改 boot 的方法
+
+比如：
+
+```
+
+    public function boot()
+    {
+        //
+        Route::pattern('id', '[0-9]+');//新添加的规则
+        parent::boot();
+    }
 ```
 
 
