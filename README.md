@@ -9,30 +9,34 @@
 #### Apache
 
 ```
-  .htaccess
+.htaccess
 
- Options +FollowSymLinks
+Options +FollowSymLinks
 
- RewriteEngine On
+RewriteEngine On
 
 
 
- RewriteCond %{REQUEST\_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-d
 
- RewriteCond %{REQUEST\_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-f
 
- RewriteRule ^ index.php \[L\]
+RewriteRule ^ index.php [L]
 ```
+
+
 
 #### Nginx
 
 ```
- location / {
+location / {
 
-     try\_files $uri $uri/ /index.php?$query\_string;
+     try_files $uri $uri/ /index.php?$query_string;
 
  }
 ```
+
+
 
 地址解析要解析到 /public 该目录。该public目录包含文件，该文件是进入应用程序并配置自动加载的所有请求的入口点。
 
