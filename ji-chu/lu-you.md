@@ -1,4 +1,4 @@
-#  简单的路由【routes/web.php】
+# 简单的路由【routes/web.php】
 
 添加/foo的访问路径，地址直接访问即可查看'HelloWorld'的返回结果
 
@@ -36,5 +36,5 @@ return 'Hello World';
 
 Route::view\('/welcome','welcome'\);
 
-Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中可以打印传来的值
+Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中可以打印传来的值 {{$name}}
 
