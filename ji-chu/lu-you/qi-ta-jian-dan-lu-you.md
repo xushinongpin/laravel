@@ -78,13 +78,17 @@ Route::get('posts/{post}/comments/{comment}',function($postId,$commentId){
 比如：
 
 ```
-
-    public function boot()
-    {
-        //
-        Route::pattern('id', '[0-9]+');//新添加的规则
-        parent::boot();
-    }
+public function boot()
+{
+  //
+  Route::pattern('id', '[0-9]+');//新添加的规则
+  parent::boot();
+ }
+    
+//路由配置
+Route::get('test/{id}',function($id){
+	return view('test/csrf',['name' => 'User-'.$id]);
+});
 ```
 
 
