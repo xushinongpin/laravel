@@ -38,3 +38,9 @@ Route::view\('/welcome','welcome'\);
 
 Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中可以打印传来的值  { { $name} } 【括号之间没有空格，本手册不支持，我才使用空格隔开】
 
+Route::get\('user/{id}',function\($id\){
+
+	return view\('test/csrf',\['name' =&gt; 'User'.$id\]\);//可以获取url传来的数据
+
+}\);
+
