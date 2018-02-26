@@ -1,4 +1,4 @@
-在控制器添加两个方法，一个用于显示，一个用于提交获取数据【 没有这个控制器自己创建 php artisan make:controller Home/TestController】
+### 在控制器添加两个方法，一个用于显示，一个用于提交获取数据【 没有这个控制器自己创建 php artisan make:controller Home/TestController】
 
 &lt;?php
 
@@ -32,9 +32,9 @@ public function tocsrf(Request $request){
 
 }
 
-创建模板【在/resources/views/ 里面创建test 目录 并在 test创建 csrf.blade.php 文件】
+### **创建模板【在/resources/views/ 里面创建test 目录 并在 test创建 csrf.blade.php 文件】**
 
-方法一：input提交csrf
+**input提交csrf**
 
 &lt;!DOCTYPE html&gt;
 
@@ -65,4 +65,14 @@ public function tocsrf(Request $request){
 &lt;/body&gt;
 
 &lt;/html&gt;
+
+
+
+### **添加路由**
+
+Route::get\('/csrf','\App\Http\Controllers\Home\TestController@csrf'\);
+
+
+
+Route::post\('/csrf','\App\Http\Controllers\Home\TestController@tocsrf'\);
 
