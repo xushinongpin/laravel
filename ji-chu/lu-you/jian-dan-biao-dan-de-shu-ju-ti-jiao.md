@@ -72,3 +72,7 @@ Route::get\('/csrf','\App\Http\Controllers\Home\TestController@csrf'\);
 
 Route::post\('/csrf','\App\Http\Controllers\Home\TestController@tocsrf'\);
 
+
+
+访问 /csrf 尝试提交测试
+
