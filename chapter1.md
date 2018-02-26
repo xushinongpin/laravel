@@ -30,5 +30,13 @@ return 'Hello World';
  Route::redirect('/here', '/there', 301);
 ```
 
+### 
 
+### **只需要视图不需要控制器可以使用**
+
+Route::view\('/welcome', 'welcome'\);
+
+
+
+Route::view\('/welcome', 'welcome', \['name' =&gt; 'test'\]\);//其中 在视图中可以 {{$name}} 打印传来的值
 
