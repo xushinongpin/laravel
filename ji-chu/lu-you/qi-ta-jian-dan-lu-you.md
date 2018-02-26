@@ -46,11 +46,13 @@ return view('test/csrf',['name' => 'User'.$id]);//可以获取url传来的单个
 
 }\);
 
-
-
 Route::get\('posts/{post}/comments/{comment}',function\($postId,$commentId\){
 
-	return view\('test/csrf',\['name' =&gt; 'postId'.$postId.'-commentId'.$commentId\]\);//传递多个参数
+```
+return view('test/csrf',['name' => 'postId'.$postId.'-commentId'.$commentId]);
+```
+
+//传递多个参数
 
 }\);
 
