@@ -41,10 +41,8 @@ Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中�
 Route::get\('user/{id}',function\($id\){
 
 ```
-return view('test/csrf',['name' => 'User'.$id]);
+return view('test/csrf',['name' => 'User'.$id]);//可以获取url传来的数据
 ```
-
-//可以获取url传来的数据
 
 }\);
 
