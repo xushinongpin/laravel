@@ -36,5 +36,5 @@ return 'Hello World';
 
 Route::view\('/welcome','welcome'\);
 
-Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中可以打印传来的值 {{$name}}
+Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中可以打印传来的值
 
