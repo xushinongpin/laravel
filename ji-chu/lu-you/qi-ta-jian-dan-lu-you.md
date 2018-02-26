@@ -38,13 +38,19 @@ Route::view\('/welcome','welcome'\);
 
 Route::view\('/welcome','welcome',\['name'=&gt;'test'\]\);//其中在视图中可以打印传来的值  { { $name} } 【括号之间没有空格，本手册不支持，我才使用空格隔开】
 
+```
+//可以获取url传来的单个参数
+```
+
 Route::get\('user/{id}',function\($id\){
 
 ```
-return view('test/csrf',['name' => 'User'.$id]);//可以获取url传来的单个参数
+return view('test/csrf',['name' => 'User'.$id]);
 ```
 
 }\);
+
+//传递多个参数
 
 Route::get\('posts/{post}/comments/{comment}',function\($postId,$commentId\){
 
@@ -52,7 +58,15 @@ Route::get\('posts/{post}/comments/{comment}',function\($postId,$commentId\){
 return view('test/csrf',['name' => 'postId'.$postId.'-commentId'.$commentId]);
 ```
 
-//传递多个参数
+}\);
+
+
+
+//传递可有可无的参数
+
+Route::get\('test/{name?}',function\($name = 'John'\){
+
+	return time\(\).'-'.$name;
 
 }\);
 
