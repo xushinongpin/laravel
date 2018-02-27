@@ -78,3 +78,27 @@ Route::post('/csrf','\App\Http\Controllers\Home\TestController@tocsrf');
 
 访问 /csrf 尝试提交测试
 
+
+
+
+
+表单提交需要的csrf验证，如果在某情况下不需要csrf的验证，那么就需要另外的授权了
+
+```
+打开 /app/Http/Middleware/VerifyCsrfToken.php 添加到 $except，
+比如：
+
+    protected $except = [
+        'a',
+        'b',
+    ];
+```
+
+
+
+
+
+
+
+
+
