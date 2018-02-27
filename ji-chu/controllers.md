@@ -40,7 +40,7 @@ Route::get('user/{id}', 'UserController@show');
 
 额外知识
 
-如果该控制器只有一个操作，就可以使用 \_\_invoke 
+如果该控制器只有一个操作，就可以使用 \_\_invoke
 
 ```
 <?php
@@ -51,7 +51,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Http\Controllers\Controller;
 
-class ShowProfileController extends Controller
+class ShowProfile extends Controller
 {
     /**
      * Show the profile for the given user.
