@@ -30,6 +30,7 @@ public function tocsrf(Request $request){
 **input提交csrf**
 
 ```
+方法一：
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,6 +40,25 @@ public function tocsrf(Request $request){
 <form method="POST" action="/csrf">
 
     {{csrf_field()}}
+
+    <input type="text" name="text" value="text">
+
+    <input type="submit" value="submit">
+
+</form>
+</body>
+</html>
+
+方法二：
+<!DOCTYPE html>
+<html>
+<head>
+<title>test csrf submitted</title>
+</head>
+<body>
+<form method="POST" action="/csrf">
+
+    @csrf
 
     <input type="text" name="text" value="text">
 
