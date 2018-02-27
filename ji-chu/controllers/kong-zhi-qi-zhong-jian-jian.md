@@ -23,12 +23,11 @@ class UserController extends Controller
 }
 ```
 
-错误提示解决方法
+##### 错误提示解决方法
 
 ```
 错误提示： InvalidArgumentException Route [login] not defined.
 解决方法：路由添加：Auth::routes();
-
 ```
 
 
