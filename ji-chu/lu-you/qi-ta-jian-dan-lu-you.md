@@ -84,10 +84,19 @@ public function boot()
   Route::pattern('id', '[0-9]+');//新添加的规则
   parent::boot();
  }
-    
+
 //路由配置
 Route::get('test/{id}',function($id){
-	return view('test/csrf',['name' => 'User-'.$id]);
+    return view('test/csrf',['name' => 'User-'.$id]);
+});
+```
+
+##### 同时支持post与get提交的路由
+
+```
+
+Route::match(['get','post'],'run', function () {
+    return 'get and post';
 });
 ```
 
