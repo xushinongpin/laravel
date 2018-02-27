@@ -38,5 +38,35 @@ Route::get('user/{id}', 'UserController@show');
 
 ##### 访问地址： user/1 【 没有用户会报404等错误，可以自己添加数据进去测试 】
 
+额外知识
+
+如果该控制器只有一个操作，就可以使用 \_\_invoke 
+
+```
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\User;
+use App\Http\Controllers\Controller;
+
+class ShowProfileController extends Controller
+{
+    /**
+     * Show the profile for the given user.
+     *
+     * @param  int  $id
+     * @return Response
+     */
+    public function __invoke($id)
+    {
+        return view('user.profile', ['user' => User::findOrFail($id)]);
+    }
+}
+
+Route::get('user/{id}', 'ShowProfileController');
+```
+
 
 
