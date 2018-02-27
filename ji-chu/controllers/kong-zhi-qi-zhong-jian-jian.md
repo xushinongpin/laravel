@@ -29,7 +29,8 @@ class UserController extends Controller
 错误提示： InvalidArgumentException Route [login] not defined.
 解决方法：路由添加：Auth::routes();
 
-如果没有 auth/login.blade.php 模板也会报错
+错误提示：InvalidArgumentException View [auth.login] not found.
+解决方法：创建 auth/login.blade.php
 ```
 
 
