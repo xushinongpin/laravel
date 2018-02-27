@@ -2,6 +2,7 @@
 
 ```
 php artisan make:controller UserController
+备注：php artisan make:controller UserController --resource 将会创建 index,create,store,show,edit,update,destroy 的方法
 ```
 
 ##### 默认查找某用户的所有信息的方法
