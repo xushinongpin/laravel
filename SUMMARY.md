@@ -9,4 +9,5 @@
   * [CSRF保护](ji-chu/csrf.md)
   * [Controllers](ji-chu/controllers.md)
     * [控制器中间件](ji-chu/controllers/kong-zhi-qi-zhong-jian-jian.md)
+    * [资源控制器](ji-chu/controllers/zi-yuan-kong-zhi-qi.md)
 
