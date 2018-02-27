@@ -30,7 +30,7 @@ class UserController extends Controller
 }
 ```
 
-##### 添加路由
+##### 添加路由 备注：控制器指定只需要指定 App\Http\Controllers 之后的路径就行了
 
 ```
 Route::get('user/{id}', 'UserController@show');
