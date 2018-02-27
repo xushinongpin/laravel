@@ -190,7 +190,7 @@ class PhotoController extends Controller
 }
 
 则可以访问
-/photos 【默认指向index】
+/photos 【默认指向index 访问 /photos/index 是无效的 】
 /photos/create 【 指向create方法 】
 ```
 
