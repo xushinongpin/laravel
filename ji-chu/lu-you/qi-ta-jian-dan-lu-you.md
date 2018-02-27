@@ -99,11 +99,18 @@ Route::match(['get','post'],'run', function () {
 });
 ```
 
-资源控制器
+##### 资源控制器
 
 ```
+路由
 Route::resource('photos', 'PhotoController');
+    还可以用数组形式
+     Route::resources([
+         'photos' => 'PhotoController',
+         'posts' => 'PostController'
+     ]);
 
+控制器
 <?php
 
 namespace App\Http\Controllers;
@@ -189,7 +196,7 @@ class PhotoController extends Controller
     }
 }
 
-则可以访问
+访问
 /photos 【默认指向index 访问 /photos/index 是无效的 】
 /photos/create 【 指向create方法 】
 ```
