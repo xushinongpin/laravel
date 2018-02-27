@@ -8,4 +8,5 @@
     * [其他简单路由](ji-chu/lu-you/qi-ta-jian-dan-lu-you.md)
   * [CSRF保护](ji-chu/csrf.md)
   * [Controllers](ji-chu/controllers.md)
+    * [控制器中间件](ji-chu/controllers/kong-zhi-qi-zhong-jian-jian.md)
 
