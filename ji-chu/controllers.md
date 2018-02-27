@@ -1,10 +1,10 @@
-创建User控制器
+##### 创建User控制器
 
 ```
 php artisan make:controller UserController
 ```
 
-默认查找某用户的所有信息的方法
+##### 默认查找某用户的所有信息的方法
 
 ```
 <?php
@@ -25,17 +25,18 @@ class UserController extends Controller
      */
     public function show($id)
     {
-	return view('user.profile', ['user' => User::findOrFail($id)]);
+    return view('user.profile', ['user' => User::findOrFail($id)]);
     }
 }
-
 ```
 
-添加路由
+##### 添加路由
 
 ```
 Route::get('user/{id}', 'UserController@show');
 ```
 
-访问地址： user/1 【 没有用户会报404等错误，可以自己添加数据进去测试 】
+##### 访问地址： user/1 【 没有用户会报404等错误，可以自己添加数据进去测试 】
+
+
 
