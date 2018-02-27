@@ -4,8 +4,6 @@
 Route::get('profile', 'UserController@show')->middleware('auth');
 ```
 
-控制器的里面
-
 ```
 class UserController extends Controller
 {
