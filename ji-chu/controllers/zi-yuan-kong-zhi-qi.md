@@ -1,4 +1,4 @@
-##### 资源控制器 【  】
+##### 资源控制器 【 php artisan make:controller PhotoController --resource 】
 
 ```
 路由
