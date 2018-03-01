@@ -2,12 +2,24 @@
 
 ```
 路由
+写法一：
 Route::resource('photos', 'PhotoController');
+写法二：
     还可以用数组形式
      Route::resources([
          'photos' => 'PhotoController',
          'posts' => 'PostController'
      ]);
+
+只允许哪几个方法使用资源路由
+Route::resource('photos', 'PhotoController', ['only' => [
+    'index', 'show'
+]]);
+处了哪几个方法之外可以使用资源路由
+Route::resource('photos', 'PhotoController', ['except' => [
+    'create', 'store', 'update', 'destroy'
+]]);
+
 
 控制器
 <?php
