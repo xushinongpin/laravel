@@ -26,6 +26,10 @@ Route::apiResources([
     'posts' => 'PostController'
 ]);
 
+额外知识：要快速生成不包含创建或编辑方法的API资源控制器
+php artisan make:controller API/PhotoController --api
+
+
 控制器
 <?php
 
