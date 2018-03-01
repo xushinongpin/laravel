@@ -20,7 +20,7 @@ Route::resources([
 'photos' => 'PhotoController',
 'posts' => 'PostController'
 ]);
-//会自动排除那些方法自己测试下就知道了
+//官方 'only' => ['index', 'show', 'store', 'update', 'destroy'], 具体需要亲测
 Route::apiResources([
     'photos' => 'PhotoController',
     'posts' => 'PostController'
