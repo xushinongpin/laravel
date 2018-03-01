@@ -4,13 +4,6 @@
 路由
 写法一：
 Route::resource('photos', 'PhotoController');
-写法二：
-    还可以用数组形式
-     Route::resources([
-         'photos' => 'PhotoController',
-         'posts' => 'PostController'
-     ]);
-
 只允许哪几个方法使用资源路由
 Route::resource('photos', 'PhotoController', ['only' => [
     'index', 'show'
@@ -19,7 +12,19 @@ Route::resource('photos', 'PhotoController', ['only' => [
 Route::resource('photos', 'PhotoController', ['except' => [
     'create', 'store', 'update', 'destroy'
 ]]);
-
+apiResource 会自动排除 create 和edit 两个方法
+Route::apiResource('photos', 'PhotoController');
+写法二：
+还可以用数组形式
+Route::resources([
+'photos' => 'PhotoController',
+'posts' => 'PostController'
+]);
+//会自动排除那些方法自己测试下就知道了
+Route::apiResources([
+    'photos' => 'PhotoController',
+    'posts' => 'PostController'
+]);
 
 控制器
 <?php
