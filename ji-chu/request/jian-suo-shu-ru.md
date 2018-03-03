@@ -65,7 +65,11 @@ if ($request->has('name')) {
 $name = $request->has(['test','mytest']);
 ```
 
+存在值是否为空
 
+```
+$name = $request->filled(['mytest']);
+```
 
 
 
