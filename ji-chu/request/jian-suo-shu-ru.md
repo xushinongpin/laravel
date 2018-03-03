@@ -54,5 +54,18 @@ $input = $request->only('username', 'password');
 $input = $request->except(['credit_card']);
 ```
 
+has方法确定输入值是否存在
+
+```
+if ($request->has('name')) {
+    //
+}
+
+多个值用
+$name = $request->has(['test','mytest']);
+```
+
+
+
 
 
