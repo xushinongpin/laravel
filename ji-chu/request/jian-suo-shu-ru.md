@@ -1,3 +1,9 @@
+首先必须引入：
+
+```
+Illuminate\Http\Request
+```
+
 您也可以使用all、input或query方法以数组形式检索所有输入数据：
 
 ```
