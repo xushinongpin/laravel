@@ -41,5 +41,11 @@ $name = $request->input('products.0.name');
 $names = $request->input('products.*.name');
 ```
 
+访问名称字段：
+
+```
+$name = $request->name;
+```
+
 
 
