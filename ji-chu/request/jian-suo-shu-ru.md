@@ -34,7 +34,7 @@ class UserController extends Controller
 }
 ```
 
-第一个参数没有将返回第二个参数，比如 /a/b?name=test&who=me
+第一个参数没有将返回第二个参数，比如 /a/b?name=test
 
 ```
 <?php
