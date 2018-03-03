@@ -16,7 +16,7 @@ class UserController extends Controller
 }
 ```
 
-无论HTTP谓词如何，input 可用于检索用户输入：必须穿参数，比如 /a/b?name=test
+无论HTTP谓词如何，input 可用于检索用户输入：必须传参数否则返回null，比如 /a/b?name=test
 
 ```
 <?php
@@ -34,9 +34,10 @@ class UserController extends Controller
 }
 ```
 
-第一个参数没有将返回第二个参数，比如 /a/b?name=test
+第一个参数没有将返回默认值，比如 /a/b?name=test
 
 ```
+input试玩写法
 <?php
 
 namespace App\Http\Controllers;
@@ -48,6 +49,21 @@ class UserController extends Controller
 {
     public function c(Request  $request){
         dd($request->input('name',"I'm spare tire"));
+    }
+}
+
+query的写法
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class UserController extends Controller
+{
+    public function c(Request  $request){
+        dd($request->query('name',"I'm spare tire"));
     }
 }
 ```
