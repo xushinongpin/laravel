@@ -16,7 +16,7 @@ class UserController extends Controller
 }
 ```
 
-无论HTTP谓词如何，input 可用于检索用户输入：
+无论HTTP谓词如何，input 可用于检索用户输入：必须穿参数，比如 /a/b?name=test
 
 ```
 <?php
@@ -30,6 +30,24 @@ class UserController extends Controller
 {
     public function c(Request  $request){
         dd($input = $request->input('name'));
+    }
+}
+```
+
+第一个参数没有将返回第二个参数，比如 /a/b?name=test&who=me
+
+```
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class UserController extends Controller
+{
+    public function c(Request  $request){
+        dd($input = $request->input('name1','who'));
     }
 }
 ```
