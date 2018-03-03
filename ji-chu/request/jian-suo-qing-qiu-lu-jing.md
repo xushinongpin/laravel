@@ -23,11 +23,26 @@ use Illuminate\Http\Request;
 request可以这样传入
 
 ```
-
     public function c(Request $request){
         dd($request->path());
     }
 ```
 
 其中 dd 是 dump and die
+
+
+
+验证传入请求路径是否与给定模式匹配
+
+```
+
+    public function c(Request $request){
+        if ($request->is('a/*')) {
+            dd($request->path());
+        }
+        dd("what  are you want to do");
+    }
+```
+
+
 
