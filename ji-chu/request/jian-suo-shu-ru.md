@@ -52,5 +52,13 @@ class UserController extends Controller
 }
 ```
 
+处理包含数组输入的表单时，请使用“点”符号访问数组：
+
+```
+$name = $request->input('products.0.name');
+
+$names = $request->input('products.*.name');
+```
+
 
 
