@@ -14,4 +14,6 @@
     * [本地化资源URI](ji-chu/controllers/ben-di-hua-zi-yuan-uri.md)
     * [补充资源控制器](ji-chu/controllers/bu-chong-zi-yuan-kong-zhi-qi.md)
     * [依赖注入 & 控制器](ji-chu/controllers/yi-lai-zhu-ru-he-kong-zhi-qi.md)
+  * [Request](ji-chu/request.md)
+    * [检索请求路径](ji-chu/request/jian-suo-qing-qiu-lu-jing.md)
 
