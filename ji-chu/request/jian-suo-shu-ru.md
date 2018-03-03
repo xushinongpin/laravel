@@ -47,5 +47,12 @@ $names = $request->input('products.*.name');
 $name = $request->name;
 ```
 
+检索输入数据的一部分
+
+```
+$input = $request->only('username', 'password');
+$input = $request->except(['credit_card']);
+```
+
 
 
