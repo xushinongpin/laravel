@@ -17,4 +17,5 @@
   * [Request](ji-chu/request.md)
     * [检索请求路径](ji-chu/request/jian-suo-qing-qiu-lu-jing.md)
     * [检索请求URL](ji-chu/request/jian-suo-qing-qiu-url.md)
+    * [检索请求方法](ji-chu/request/jian-suo-qing-qiu-fang-fa.md)
 
