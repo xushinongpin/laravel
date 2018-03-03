@@ -19,4 +19,5 @@
     * [检索请求URL](ji-chu/request/jian-suo-qing-qiu-url.md)
     * [检索请求方法](ji-chu/request/jian-suo-qing-qiu-fang-fa.md)
     * [PSR-7请求](ji-chu/request/psr-7qing-qiu.md)
+    * [检索输入](ji-chu/request/jian-suo-shu-ru.md)
 
