@@ -16,4 +16,5 @@
     * [依赖注入 & 控制器](ji-chu/controllers/yi-lai-zhu-ru-he-kong-zhi-qi.md)
   * [Request](ji-chu/request.md)
     * [检索请求路径](ji-chu/request/jian-suo-qing-qiu-lu-jing.md)
+    * [检索请求URL](ji-chu/request/jian-suo-qing-qiu-url.md)
 
