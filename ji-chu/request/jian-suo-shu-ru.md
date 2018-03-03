@@ -47,7 +47,7 @@ use App\Http\Controllers\Controller;
 class UserController extends Controller
 {
     public function c(Request  $request){
-        dd($input = $request->input('name1','who'));
+        dd($request->input('name',"I'm spare tire"));
     }
 }
 ```
