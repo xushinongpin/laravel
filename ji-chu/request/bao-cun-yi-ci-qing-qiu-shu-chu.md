@@ -1,7 +1,9 @@
-#### Session存储
+
+
+从Request中检索Cookie
 
 ```
-$request->flash();
+$value = $request->cookie('name');//name为cookie的该键名
 ```
 
 
