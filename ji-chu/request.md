@@ -16,7 +16,7 @@ $request->instance();
 ##### method\(\)  获取请求方法
 
 ```
-$request->method();
+$request->method();//打印出 GET 或者 POST 等 该操作的请求方法
 ```
 
 
