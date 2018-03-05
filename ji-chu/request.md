@@ -13,5 +13,11 @@ $request->capture()->header();
 $request->instance();
 ```
 
+##### method\(\)  获取请求方法
+
+```
+$request->method();
+```
+
 
 
