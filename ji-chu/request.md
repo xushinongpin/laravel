@@ -7,5 +7,11 @@ $request->capture()->cookie();
 $request->capture()->header();
 ```
 
+##### instance\(\) 返回请求实例
+
+```
+$request->instance();
+```
+
 
 
