@@ -64,7 +64,7 @@ $request->decodedPath();
 输出："b/c"
 ```
 
-##### segment\($index, $default = null\) 从URI中获取一段（基于1的索引）
+##### segment\($index, $default = null\) 从URI中获取一段（基于1的索引）路径
 
 ```
 路径：http://a.com/b/c?key=1
@@ -72,7 +72,6 @@ $request->decodedPath();
 输出："b"
 访问：$request->segment(3,'Spare tire');
 输出："Spare tire"
-
 ```
 
 
