@@ -74,5 +74,18 @@ $request->decodedPath();
 输出："Spare tire"
 ```
 
+##### segments\(\)  获取请求路径的所有段
+
+```
+$request->segments();
+访问：http://a.com/b/c?key=1
+输出：array:2 [▼
+        0 => "b"
+        1 => "c"
+      ]
+```
+
+
+
 
 
