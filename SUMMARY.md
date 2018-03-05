@@ -21,4 +21,5 @@
     * [PSR-7请求](ji-chu/request/psr-7qing-qiu.md)
     * [检索输入](ji-chu/request/jian-suo-shu-ru.md)
     * [Cookies](ji-chu/request/bao-cun-yi-ci-qing-qiu-shu-chu.md)
+    * [检索上传的文件](ji-chu/request/jian-suo-shang-chuan-de-wen-jian.md)
 
