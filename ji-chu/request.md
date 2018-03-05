@@ -50,6 +50,16 @@ $data = $request->fullUrlWithQuery($array);
 
 ```
 $request->path();
+
+访问：http://a.com/b/c?key=1
+输出："b/c"
+```
+
+##### decodedPath\(\) 获取请求的当前解码路径信息
+
+```
+$request->decodedPath();
+
 访问：http://a.com/b/c?key=1
 输出："b/c"
 ```
