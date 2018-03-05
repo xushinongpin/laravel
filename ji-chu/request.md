@@ -42,7 +42,7 @@
 ```
     $array = array('b'=>'c','d'=>'e');
     $data = $request->fullUrlWithQuery($array);
-    
+
     输出："http://laravel56.com/a/b?b=c&d=e"
 ```
 
@@ -50,7 +50,7 @@
 
 ```
     $request->path();
-    
+
     访问：http://a.com/b/c?key=1
     输出："b/c"
 ```
@@ -59,7 +59,7 @@
 
 ```
     $request->decodedPath();
-    
+
     访问：http://a.com/b/c?key=1
     输出："b/c"
 ```
@@ -92,10 +92,8 @@
         $request->is($array);
         访问：http://a.com/b/c
         输出：true
-        访问：http://a.com/b/c
-        输出：true
-
-        
+        访问：http://a.com/b/d
+        输出：false
 ```
 
 
