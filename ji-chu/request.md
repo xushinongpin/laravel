@@ -64,5 +64,11 @@ $request->decodedPath();
 输出："b/c"
 ```
 
+##### segment\($index, $default = null\) 从URI中获取一段（基于1的索引）
+
+```
+$request->segment(1,'Spare tire');
+```
+
 
 
