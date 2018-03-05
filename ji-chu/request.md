@@ -19,5 +19,17 @@ $request->instance();
 $request->method();//打印出 GET 或者 POST 等 该操作的请求方法
 ```
 
+获取跟url
+
+```
+$request->root(); //http://a.com
+```
+
+获取请求url（无查询字符串）
+
+```
+$request->url(); // http://a.com/b/c
+```
+
 
 
