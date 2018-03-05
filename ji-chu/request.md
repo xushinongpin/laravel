@@ -67,7 +67,12 @@ $request->decodedPath();
 ##### segment\($index, $default = null\) 从URI中获取一段（基于1的索引）
 
 ```
-$request->segment(1,'Spare tire');
+路径：http://a.com/b/c?key=1
+访问：$request->segment(1,'Spare tire');
+输出："b"
+访问：$request->segment(3,'Spare tire');
+输出："Spare tire"
+
 ```
 
 
