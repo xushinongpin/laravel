@@ -5,7 +5,6 @@
 $request->capture()->server();
 $request->capture()->cookie();
 $request->capture()->header();
-$request->capture()->file();
 ```
 
 
