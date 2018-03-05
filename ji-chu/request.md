@@ -105,11 +105,17 @@
 ##### fullUrlIs\(...$patterns\) 确定当前请求URL和查询字符串是否与模式匹配
 
 ```
-
         $array = array('http://a.com/a/b','http://a.com/a/b?c=1');
         $request->fullUrlIs($array);
         访问：http://a.com/a/b?c=1  返回：true
         访问：http://a.com/a/b?d=1  返回false
+```
+
+##### ajax\(\)  确定请求是否是AJAX调用的结果
+
+```
+        $request->ajax();
+        ajax访问返回true，否则返回false
 ```
 
 ##### 1
