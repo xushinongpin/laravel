@@ -31,5 +31,11 @@ $request->root(); //http://a.com
 $request->url(); // http://a.com/b/c
 ```
 
+##### 获取请求完整的url
+
+```
+$request->fullUrl(); // http://a.com/b/c?d=e
+```
+
 
 
