@@ -46,5 +46,13 @@ $data = $request->fullUrlWithQuery($array);
 输出："http://laravel56.com/a/b?b=c&d=e"
 ```
 
+##### path\(\) 获取当前路径信息
+
+```
+$request->path();
+访问：http://a.com/b/c?key=1
+输出："b/c"
+```
+
 
 
