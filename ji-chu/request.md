@@ -96,5 +96,23 @@
         输出：false
 ```
 
+##### routeIs\(...$patterns\) 确定路由名称是否与给模式匹配
+
+```
+
+```
+
+##### fullUrlIs\(...$patterns\) 确定当前请求URL和查询字符串是否与模式匹配
+
+```
+
+        $array = array('http://a.com/a/b','http://a.com/a/b?c=1');
+        $request->fullUrlIs($array);
+        访问：http://a.com/a/b?c=1  返回：true
+        访问：http://a.com/a/b?d=1  返回false
+```
+
+##### 1
+
 
 
