@@ -192,6 +192,10 @@
     $request->getSession();
 ```
 
+##### user\($guard = null\) 让用户提出请求
+
+##### 
+
 ##### 1
 
 ##### 后续
