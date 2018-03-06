@@ -161,17 +161,23 @@
     $request->replace($array); //无论传什么来，打印出来的只有$array数组里面的数据
 ```
 
-##### json\($key = null, $default = null\) 获取请求的JSON负载
+##### createFromBase\(SymfonyRequest $request\) 从Symfony实例创建 Illuminate 请求
 
 ```
-    
+$request->createFromBase($request);
 ```
 
 ##### 1
 
+
+
+##### 还未领悟的
+
 ```
 getInputSource()获取请求的输入源 、 createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 、 json($key = null, $default = null) 获取请求的JSON负载
 ```
+
+
 
 
 
