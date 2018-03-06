@@ -217,6 +217,12 @@
     $request->getUserResolver();
 ```
 
+##### getRouteResolver\(\) 获取路由解析器回调
+
+```
+    $request->getRouteResolver();
+```
+
 ##### 1
 
 ##### 后续
