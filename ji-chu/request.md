@@ -211,6 +211,12 @@
     $data =  $request->setJson($json);
 ```
 
+##### getUserResolver\(\)  获取用户解析器回调
+
+```
+    $request->getUserResolver();
+```
+
 ##### 1
 
 ##### 后续
