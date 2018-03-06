@@ -164,13 +164,17 @@
 ##### createFromBase\(SymfonyRequest $request\) 从Symfony实例创建 Illuminate 请求
 
 ```
-$request->createFromBase($request);
+    $request->createFromBase($request);
 ```
 
 ##### function duplicate\(array $query = null, array $request = null, array $attributes = null, array $cookies = null, array $files = null, array $server = null\)  克隆请求并覆盖一些参数
 
 ```
-
+    $query  =  array('a'=>'1');
+    $attributes =  array('b'=>'1');
+    $cookies =  array('c'=>'1');
+    $server = array('f'=>'1');
+    $request->duplicate($query,null,$attributes,$cookies,null,$server);
 ```
 
 ##### 1
@@ -178,7 +182,7 @@ $request->createFromBase($request);
 ##### 还未领悟的
 
 ```
-getInputSource()获取请求的输入源 、 createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 、 json($key = null, $default = null) 获取请求的JSON负载
+    getInputSource()获取请求的输入源 、 createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 、 json($key = null, $default = null) 获取请求的JSON负载
 ```
 
 
