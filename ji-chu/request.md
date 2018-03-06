@@ -256,6 +256,20 @@
         $request->offsetGet('test'); //打印出 null
 ```
 
+##### \_\_isset\($key\) 检查请求上是否设置了输入元素
+
+```
+有
+
+        $request->offsetSet('test','250');
+        $request->__isset('test');
+没有
+
+        $request->offsetSet('test','250');
+        $request->offsetUnset('test');
+        $request->__isset('test');
+```
+
 ##### 1
 
 ##### 后续
