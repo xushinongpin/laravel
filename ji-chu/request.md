@@ -154,6 +154,13 @@
     $request->merge($array); //传输过来的数据里面新添加了 a=1
 ```
 
+##### replace\(array $input\)  替换当前请求的输入
+
+```
+    $array = array('a'=>'1');
+    $request->replace($array); //无论传什么来，打印出来的只有$array数组里面的数据
+```
+
 ##### 1
 
 ```
