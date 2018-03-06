@@ -223,10 +223,16 @@
     $request->getRouteResolver();
 ```
 
-#####  toArray\(\)  获取请求的所有输入和文件
+##### toArray\(\)  获取请求的所有输入和文件
 
 ```
     $request->toArray();
+```
+
+#####  offsetExists\($offset\) 确定给定的偏移量是否存在
+
+```
+$request->offsetExists('key'); //带上参数key就返回true，否则 false
 ```
 
 ##### 1
