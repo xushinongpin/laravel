@@ -241,6 +241,13 @@
     $request->offsetGet('key'); //key带上数据，返回就是该数据
 ```
 
+##### offsetSet\($offset, $value\) 将值设置为给定的偏移量
+
+```
+        $request->offsetSet('test','250'); // 给test设置了250
+        $request->offsetGet('test');  //打印出为250
+```
+
 ##### 1
 
 ##### 后续
