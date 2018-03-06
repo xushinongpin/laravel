@@ -229,10 +229,16 @@
     $request->toArray();
 ```
 
-#####  offsetExists\($offset\) 确定给定的偏移量是否存在
+##### offsetExists\($offset\) 确定给定的偏移量是否存在
 
 ```
-$request->offsetExists('key'); //带上参数key就返回true，否则 false
+    $request->offsetExists('key'); //带上参数key就返回true，否则 false
+```
+
+##### offsetGet\($offset\) 获取给定偏移量的值
+
+```
+    $request->offsetGet('key'); //key带上数据，返回就是该数据
 ```
 
 ##### 1
