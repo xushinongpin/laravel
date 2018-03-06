@@ -24,4 +24,5 @@
     * [检索上传的文件](ji-chu/request/jian-suo-shang-chuan-de-wen-jian.md)
   * [HTTP 响应](ji-chu/http-xiang-ying.md)
     * [创建响应](ji-chu/http-xiang-ying/chuang-jian-xiang-ying.md)
+    * [重定向](ji-chu/http-xiang-ying/zhong-ding-xiang.md)
 

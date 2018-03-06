@@ -87,22 +87,20 @@
 ```
 路由
     Route::get('home', function () {
-    	$minutes = 0.1;
-    	Cookie::queue(Cookie::make('ceshicookie', 'value', $minutes));
-    	Cookie::queue('ceshicookie', 'value', $minutes);
+        $minutes = 0.1;
+        Cookie::queue(Cookie::make('ceshicookie', 'value', $minutes));
+        Cookie::queue('ceshicookie', 'value', $minutes);
     });
-    
+
     修改Middleware
     /app/Http/Middleware/EncryptCookies.php
-    
+
         protected $except = [
             'ceshicookie',
         ];
 ```
 
-##### 
 
-##### 1
 
 
 
