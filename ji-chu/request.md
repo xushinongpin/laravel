@@ -248,6 +248,14 @@
         $request->offsetGet('test');  //打印出为250
 ```
 
+##### offsetUnset\($offset\) 删除给定偏移量的值
+
+```
+        $request->offsetSet('test','250');// 给test设置了250
+        $request->offsetUnset('test');// 删除test
+        $request->offsetGet('test'); //打印出 null
+```
+
 ##### 1
 
 ##### 后续
