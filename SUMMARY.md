@@ -22,4 +22,5 @@
     * [检索输入](ji-chu/request/jian-suo-shu-ru.md)
     * [Cookies](ji-chu/request/bao-cun-yi-ci-qing-qiu-shu-chu.md)
     * [检索上传的文件](ji-chu/request/jian-suo-shang-chuan-de-wen-jian.md)
+  * [HTTP 响应](ji-chu/http-xiang-ying.md)
 
