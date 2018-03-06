@@ -72,10 +72,14 @@
             ->header('Content-Type', $type)
             ->cookie('name', 'value', $minutes,$path,$damain,$secure,$httpOnly);
     });
-    
+
     队列
-    Cookie::queue(Cookie::make('name', 'value', $minutes));
-    Cookie::queue('name', 'value', $minutes);
+
+    Route::get('home', function () {
+    	$minutes = 0.1;
+    	Cookie::queue(Cookie::make('key', 'value', $minutes));
+    	Cookie::queue('key', 'value', $minutes);
+    });
 ```
 
 
