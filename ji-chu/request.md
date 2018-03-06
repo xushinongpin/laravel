@@ -234,6 +234,7 @@
     filterFiles($files) 过滤给定的文件数组，删除所有空值
     $request->route(); 获取处理请求的路由
     setUserResolver(Closure $callback) 设置用户解析器回调
+    setRouteResolver(Closure $callback) 设置路由解析器回调
 ```
 
 
