@@ -184,6 +184,14 @@
     $request->getSession();
 ```
 
+##### setLaravelSession\($session\) 在请求上设置会话实例
+
+```
+    $session['text'] = array('abc');
+    $request->setLaravelSession($session);
+    $request->getSession();
+```
+
 ##### 1
 
 ##### 后续
