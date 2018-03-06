@@ -127,6 +127,14 @@ pjax访问返回true，否则返回false
 相关使用资料：https://github.com/defunkt/jquery-pjax
 ```
 
+##### secure\(\) 确定请求是否通过HTTPS
+
+```
+$request->secure();
+
+https访问返回true，否则返回false
+```
+
 ##### 1
 
 ```
