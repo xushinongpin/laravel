@@ -58,20 +58,24 @@
             ->header('Content-Type', $type)
             ->cookie('name', 'value', $minutes);
     });
-    
+
     详细参考setcookie ： https://secure.php.net/manual/en/function.setcookie.php
     Route::get('home', function () {
-    	$content = 1;
-    	$type = 'text/plain';
-    	$minutes = 0.1;
-    	$path = '/home';
-    	$damain = 'laravel56.com';
-    	$secure = false;
-    	$httpOnly = true;
-    	return response($content)
-    		->header('Content-Type', $type)
-    		->cookie('name', 'value', $minutes,$path,$damain,$secure,$httpOnly);
+        $content = 1;
+        $type = 'text/plain';
+        $minutes = 0.1;
+        $path = '/home';
+        $damain = 'laravel56.com';
+        $secure = false;
+        $httpOnly = true;
+        return response($content)
+            ->header('Content-Type', $type)
+            ->cookie('name', 'value', $minutes,$path,$damain,$secure,$httpOnly);
     });
+    
+    队列
+    Cookie::queue(Cookie::make('name', 'value', $minutes));
+    Cookie::queue('name', 'value', $minutes);
 ```
 
 
