@@ -227,6 +227,7 @@
     json($key = null, $default = null) 获取请求的JSON负载
     filterFiles($files) 过滤给定的文件数组，删除所有空值
     $request->route(); 获取处理请求的路由
+    setUserResolver(Closure $callback) 设置用户解析器回调
 ```
 
 
