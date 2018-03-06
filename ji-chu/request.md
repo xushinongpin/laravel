@@ -123,7 +123,7 @@
 ```
     $request->pjax();  
     pjax访问返回true，否则返回false
-    
+
     相关使用资料：https://github.com/defunkt/jquery-pjax
 ```
 
@@ -139,6 +139,12 @@
 ```
     $request->ip(); //返回单个ip
     $request->ips(); // 返回ip数组
+```
+
+##### userAgent\(\) 获取客户端用户代理
+
+```
+    $request->userAgent(); // 在客户端headers头可以查到 比如 User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36 则返回 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
 ```
 
 ##### 1
