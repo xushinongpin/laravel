@@ -192,7 +192,7 @@
     $request->getSession();
 ```
 
-##### user\($guard = null\) 让用户提出请求
+##### user\($guard = null\) 获取发出请求的用户
 
 ```
     $request->user();
@@ -207,6 +207,7 @@
     createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 
     json($key = null, $default = null) 获取请求的JSON负载
     filterFiles($files) 过滤给定的文件数组，删除所有空值
+    $request->route(); 获取处理请求的路由
 ```
 
 
