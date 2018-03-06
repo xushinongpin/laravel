@@ -177,12 +177,22 @@
     $request->duplicate($query,null,$attributes,$cookies,null,$server);
 ```
 
-##### 1
-
-##### 还未领悟的
+##### session\(\) 、getSession\(\) 获取与请求关联的session
 
 ```
-    getInputSource()获取请求的输入源 、 createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 、 json($key = null, $default = null) 获取请求的JSON负载
+    $request->session();
+    $request->getSession();
+```
+
+##### 1
+
+##### 后续
+
+```
+    getInputSource()获取请求的输入源 
+    createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 
+    json($key = null, $default = null) 获取请求的JSON负载
+    filterFiles($files) 过滤给定的文件数组，删除所有空值
 ```
 
 
