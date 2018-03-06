@@ -121,18 +121,24 @@
 ##### pjax\(\) 确定请求是否是PJAX调用的结果
 
 ```
-$request->pjax();  
-pjax访问返回true，否则返回false
-
-相关使用资料：https://github.com/defunkt/jquery-pjax
+    $request->pjax();  
+    pjax访问返回true，否则返回false
+    
+    相关使用资料：https://github.com/defunkt/jquery-pjax
 ```
 
 ##### secure\(\) 确定请求是否通过HTTPS
 
 ```
-$request->secure();
+    $request->secure();
+    https访问返回true，否则返回false
+```
 
-https访问返回true，否则返回false
+##### ip\(\) 或 ips\(\) 获取客户端IP地址
+
+```
+    $request->ip(); //返回单个ip
+    $request->ips(); // 返回ip数组
 ```
 
 ##### 1
