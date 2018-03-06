@@ -263,6 +263,7 @@
 
         $request->offsetSet('test','250');
         $request->__isset('test');
+        或者传来test
 没有
 
         $request->offsetSet('test','250');
@@ -270,7 +271,12 @@
         $request->__isset('test');
 ```
 
-##### 1
+##### \_\_get\($key\) 从请求中获取输入元素
+
+```
+$request->__get('key'); //传入key或者自己设置key
+
+```
 
 ##### 后续
 
