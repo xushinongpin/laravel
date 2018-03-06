@@ -204,6 +204,13 @@
     $request->fingerprint();
 ```
 
+##### setJson\($json\) 设置JSON有效载荷的请求
+
+```
+    $json = array('asdasd');
+    $data =  $request->setJson($json);
+```
+
 ##### 1
 
 ##### 后续
