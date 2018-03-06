@@ -223,6 +223,12 @@
     $request->getRouteResolver();
 ```
 
+#####  toArray\(\)  获取请求的所有输入和文件
+
+```
+    $request->toArray();
+```
+
 ##### 1
 
 ##### 后续
