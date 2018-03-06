@@ -167,17 +167,19 @@
 $request->createFromBase($request);
 ```
 
+##### function duplicate\(array $query = null, array $request = null, array $attributes = null, array $cookies = null, array $files = null, array $server = null\)  克隆请求并覆盖一些参数
+
+```
+
+```
+
 ##### 1
-
-
 
 ##### 还未领悟的
 
 ```
 getInputSource()获取请求的输入源 、 createFrom(self $from, $to = null)根据给定的Laravel请求创建一个新的请求实例 、 json($key = null, $default = null) 获取请求的JSON负载
 ```
-
-
 
 
 
