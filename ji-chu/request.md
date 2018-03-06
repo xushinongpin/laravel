@@ -198,6 +198,12 @@
     $request->user();
 ```
 
+##### fingerprint\(\) 获取请求/路由/ IP地址的唯一指纹
+
+```
+    $request->fingerprint();
+```
+
 ##### 1
 
 ##### 后续
