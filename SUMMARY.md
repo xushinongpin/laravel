@@ -24,6 +24,4 @@
     * [检索上传的文件](ji-chu/request/jian-suo-shang-chuan-de-wen-jian.md)
   * [HTTP 响应](ji-chu/http-xiang-ying.md)
     * [创建响应](ji-chu/http-xiang-ying/chuang-jian-xiang-ying.md)
-    * [将标题附加到回复](ji-chu/http-xiang-ying/jiang-biao-ti-fu-jia-dao-hui-fu.md)
-    * [将Cookie附加到回复中](ji-chu/http-xiang-ying/jiang-cookie-fu-jia-dao-hui-fu-zhong.md)
 
