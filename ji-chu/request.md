@@ -147,6 +147,13 @@
     $request->userAgent(); // 在客户端headers头可以查到 比如 User-Agent:Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36 则返回 "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.36"
 ```
 
+##### merge\(array $input\) 将新输入合并到当前请求的输入数组中
+
+```
+    $array = array('a'=>'1');
+    $request->merge($array); //传输过来的数据里面新添加了 a=1
+```
+
 ##### 1
 
 ```
