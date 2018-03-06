@@ -2,9 +2,9 @@
 
 ```
  Route::get('home', function () {
- 	$content = 1;
- 	$type = 200;
- 	return response($content)
+     $content = 1;
+     $type = 'text/plain';
+     return response($content)
              ->header('Content-Type', $type)
              ->header('X-Header-One', 'fulk')
              ->header('X-Header-Two', 'what');
