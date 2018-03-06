@@ -118,7 +118,20 @@
         ajax访问返回true，否则返回false
 ```
 
+##### pjax\(\) 确定请求是否是PJAX调用的结果
+
+```
+$request->pjax();  
+pjax访问返回true，否则返回false
+
+相关使用资料：https://github.com/defunkt/jquery-pjax
+```
+
 ##### 1
+
+```
+
+```
 
 
 
