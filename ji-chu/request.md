@@ -207,7 +207,7 @@
 ##### setJson\($json\) 设置JSON有效载荷的请求
 
 ```
-    $json = array('asdasd');
+    $json = array('1');
     $data =  $request->setJson($json);
 ```
 
