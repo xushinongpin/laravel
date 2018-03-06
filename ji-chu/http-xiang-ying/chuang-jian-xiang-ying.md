@@ -76,11 +76,33 @@
     队列
 
     Route::get('home', function () {
-    	$minutes = 0.1;
-    	Cookie::queue(Cookie::make('key', 'value', $minutes));
-    	Cookie::queue('key', 'value', $minutes);
+        $minutes = 0.1;
+        Cookie::queue(Cookie::make('key', 'value', $minutes));
+        Cookie::queue('key', 'value', $minutes);
     });
 ```
+
+##### 去除Cookies加密【默认是加密的】
+
+```
+路由
+    Route::get('home', function () {
+    	$minutes = 0.1;
+    	Cookie::queue(Cookie::make('ceshicookie', 'value', $minutes));
+    	Cookie::queue('ceshicookie', 'value', $minutes);
+    });
+    
+    修改Middleware
+    /app/Http/Middleware/EncryptCookies.php
+    
+        protected $except = [
+            'ceshicookie',
+        ];
+```
+
+##### 
+
+##### 1
 
 
 
