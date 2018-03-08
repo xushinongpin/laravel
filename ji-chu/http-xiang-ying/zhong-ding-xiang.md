@@ -13,24 +13,24 @@
 
 ```
 路由
-	Route::post('/home', function () {
-		return back()->withInput();
-	});
+    Route::post('/home', function () {
+        return back()->withInput();
+    });
 页面
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<title>user</title>
-			<meta name="csrf-token" content="{{ csrf_token() }}">
-		</head>
-		<body>
-			<form action="/home" method="post">
-				@csrf
-				<input type="text" name="a" value="1">
-				<input type="submit" value="submit">
-			</form>
-		</body>
-	</html>
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>user</title>
+            <meta name="csrf-token" content="{{ csrf_token() }}">
+        </head>
+        <body>
+            <form action="/home" method="post">
+                @csrf
+                <input type="text" name="a" value="1">
+                <input type="submit" value="submit">
+            </form>
+        </body>
+    </html>
 ```
 
 
