@@ -26,4 +26,5 @@
     * [创建响应](ji-chu/http-xiang-ying/chuang-jian-xiang-ying.md)
     * [重定向](ji-chu/http-xiang-ying/zhong-ding-xiang.md)
     * [重定向到控制器](ji-chu/http-xiang-ying/zhong-ding-xiang-dao-kong-zhi-qi.md)
+    * [重定向到外部域](ji-chu/http-xiang-ying/zhong-ding-xiang-dao-wai-bu-yu.md)
 
