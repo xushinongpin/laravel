@@ -1,4 +1,4 @@
-**创建默认的数据库  【 **官方文档 https://laravel.com/docs/5.6/migrations **】**
+**创建默认的数据库  【 **官方文档 [https://laravel.com/docs/5.6/migrations](https://laravel.com/docs/5.6/migrations) **】**
 
 命令行 去到项目根目录执行下面命令
 
@@ -39,4 +39,8 @@
 ```
 
 /user  你的访问路径 有数据证明成功操作
+
+命令查看表结构
+
+show create table users\G;
 
