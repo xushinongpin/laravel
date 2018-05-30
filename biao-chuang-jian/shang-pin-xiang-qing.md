@@ -1,6 +1,7 @@
-# foods.json
+# foods.json、city.json
 
 ```
+商品表
 id          ---  自增id
 sid         ---  商家id
 name        ---  商品名称
@@ -23,16 +24,17 @@ rateTime    ---  评论时间
 rateType    ---  好评或差评手势  0 好评 1差评
 text        ---  评论描述
 avatar      ---  评论人头像
+
+城市表
+id          --- 自增id
+cid         --- 关联id
+spell       --- 地区英文名
+name        --- 地区中文名
 ```
 
-# city.json
+# 
 
-```
-id    --- 自增id
-cid   --- 关联id
-spell --- 地区英文名
-name  --- 地区中文名
-```
+
 
 
 
