@@ -1,9 +1,14 @@
-# foods.json、city.json、goods.json
+# foods.json【 商品表 】
+
+# city.json【 城市表 】
+
+# goods.json【 分类表+商品表 】
 
 ```
 商品表
 id          ---  自增id
 sid         ---  商家id
+cid         ---  城市id
 name        ---  商品名称
 price       ---  商品当前价格
 oldPrice    ---  商品原价
