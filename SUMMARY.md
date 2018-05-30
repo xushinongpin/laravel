@@ -30,5 +30,5 @@
     * [使用闪存 session 数据重定向](ji-chu/http-xiang-ying/shi-yong-shan-cun-session-shu-ju-zhong-ding-xiang.md)
     * [其他响应类型](ji-chu/http-xiang-ying/qi-ta-xiang-ying-lei-xing.md)
 * [表创建](biao-chuang-jian.md)
-  * [商品详情](biao-chuang-jian/shang-pin-xiang-qing.md)
+  * [前端需要数据-表](biao-chuang-jian/shang-pin-xiang-qing.md)
 

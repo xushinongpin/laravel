@@ -1,4 +1,4 @@
-# foods.json、city.json
+# foods.json、city.json、goods.json
 
 ```
 商品表
@@ -30,11 +30,12 @@ id          --- 自增id
 cid         --- 关联id
 spell       --- 地区英文名
 name        --- 地区中文名
+
+分类表
+
 ```
 
 # 
-
-
 
 
 
