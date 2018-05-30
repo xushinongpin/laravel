@@ -6,6 +6,12 @@
 
 # index.json【 分类表 + 商品表 】
 
+# ratings.json【 评论表 】
+
+# search.json 【 商品表 】
+
+# seller.json【 商家表 】
+
 ```
 商品表
 id          ---  自增id
@@ -49,6 +55,26 @@ type        ---  0减 1折 2特 3票 4保
 imgUrl      ---  分类icon链接地址
 sort        ---  排序
 attribute   ---  属性 1首页显示 2不显示
+
+商家表+用户表
+id           --- 商家id
+count        --- 
+name         --- 名称
+description  --- 描述
+deliveryTime --- 上菜时间或送达时间
+score        --- 综合平分，最高5
+serviceScore --- 服务态度，最高5
+foodScore    --- 商品平分，最高5
+rankRate     --- 等级率 【 高于周边商家百分之多少 】
+minPrice     --- 起送价
+deliveryPrice--- 配送费
+ratingCount  --- 总评论数
+sellCount    --- 月销售
+bulletin     --- 公告
+supports     --- 活动【 数组 】
+avatar       --- 商家主头像
+pics         --- 商家实景图片 【 数组，多个逗号隔开 】
+infos        --- 商家信息 【 数组，多个逗号隔开 】
 ```
 
 # 
