@@ -15,6 +15,7 @@ image       ---  商品大图 750*750
 
 评论关联表
 id          ---  自增id
+gid         ---  商品id
 uid         ---  关联用户id
 rid         ---  评论关联id
 username    ---  评论人名称
