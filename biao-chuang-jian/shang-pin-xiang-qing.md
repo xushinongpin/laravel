@@ -16,7 +16,6 @@ image       ---  商品大图 750*750
 评论关联表
 id          ---  自增id
 uid         ---  关联用户id
-sid         ---  商家id
 rid         ---  评论关联id
 username    ---  评论人名称
 rateTime    ---  评论时间
