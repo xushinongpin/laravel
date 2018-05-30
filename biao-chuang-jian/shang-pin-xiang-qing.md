@@ -1,4 +1,4 @@
-foods.json
+# foods.json
 
 ```
 id          ---  自增id
@@ -23,6 +23,15 @@ rateTime    ---  评论时间
 rateType    ---  好评或差评手势  0 好评 1差评
 text        ---  评论描述
 avatar      ---  评论人头像
+```
+
+# city.json
+
+```
+id    --- 自增id
+cid   --- 关联id
+spell --- 地区英文名
+name  --- 地区中文名
 ```
 
 

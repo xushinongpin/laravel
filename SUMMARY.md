@@ -30,8 +30,5 @@
     * [使用闪存 session 数据重定向](ji-chu/http-xiang-ying/shi-yong-shan-cun-session-shu-ju-zhong-ding-xiang.md)
     * [其他响应类型](ji-chu/http-xiang-ying/qi-ta-xiang-ying-lei-xing.md)
 * [表创建](biao-chuang-jian.md)
-  * [users](biao-chuang-jian/users.md)
-  * [password\_reset](biao-chuang-jian/passwordreset.md)
-  * [城市列表](biao-chuang-jian/cheng-shi-lie-biao.md)
   * [商品详情](biao-chuang-jian/shang-pin-xiang-qing.md)
 
