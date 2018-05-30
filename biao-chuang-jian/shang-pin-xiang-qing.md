@@ -26,13 +26,15 @@ text        ---  评论描述
 avatar      ---  评论人头像
 
 城市表
-id          --- 自增id
-cid         --- 关联id
-spell       --- 地区英文名
-name        --- 地区中文名
+id          ---  自增id
+cid         ---  关联id
+spell       ---  地区英文名
+name        ---  地区中文名
 
 分类表
-
+id          ---  分类id
+name        ---  分类名称
+type        ---  0减 1折 2特 3票 4保
 ```
 
 # 
