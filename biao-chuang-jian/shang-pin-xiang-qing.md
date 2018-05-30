@@ -58,7 +58,6 @@ attribute   ---  属性 1首页显示 2不显示
 
 商家表+用户表
 id           --- 商家id
-count        --- 
 name         --- 名称
 description  --- 描述
 deliveryTime --- 上菜时间或送达时间
