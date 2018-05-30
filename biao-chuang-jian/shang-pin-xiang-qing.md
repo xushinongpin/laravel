@@ -30,9 +30,11 @@ uid         ---  关联用户id
 rid         ---  评论关联id
 username    ---  评论人名称
 rateTime    ---  评论时间
+score       ---  评分 1-5 【 五颗星 】
 rateType    ---  好评或差评手势  0 好评 1差评
 text        ---  评论描述
 avatar      ---  评论人头像
+recommend   ---  推荐标签【 关键词，多个用逗号隔开 】
 
 城市表
 id          ---  自增id
