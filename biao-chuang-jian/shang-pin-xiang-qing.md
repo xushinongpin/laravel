@@ -4,9 +4,12 @@
 
 # goods.json【 分类表+商品表 】
 
+# index.json【 分类表 】
+
 ```
 商品表
 id          ---  自增id
+tid         ---  分类id
 sid         ---  商家id
 cid         ---  城市id
 name        ---  商品名称
@@ -18,6 +21,7 @@ description ---  商品描述
 info        ---  商品信息
 icon        ---  商品小图 114*114
 image       ---  商品大图 750*750
+recommend   ---  是否推荐 1推荐 2或其他不推荐 默认2
 
 评论关联表
 id          ---  自增id
@@ -40,6 +44,8 @@ name        ---  地区中文名
 id          ---  分类id
 name        ---  分类名称
 type        ---  0减 1折 2特 3票 4保
+imgUrl      ---  分类icon链接地址
+sort        ---  排序
 ```
 
 # 
