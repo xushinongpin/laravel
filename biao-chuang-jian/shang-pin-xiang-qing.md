@@ -4,7 +4,7 @@
 
 # goods.json【 分类表+商品表 】
 
-# index.json【 分类表 】
+# index.json【 分类表 + 商品表 】
 
 ```
 商品表
@@ -46,6 +46,7 @@ name        ---  分类名称
 type        ---  0减 1折 2特 3票 4保
 imgUrl      ---  分类icon链接地址
 sort        ---  排序
+attribute   ---  属性 1首页显示 2不显示
 ```
 
 # 
