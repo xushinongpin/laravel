@@ -33,4 +33,5 @@
   * [users](biao-chuang-jian/users.md)
   * [password\_reset](biao-chuang-jian/passwordreset.md)
   * [城市列表](biao-chuang-jian/cheng-shi-lie-biao.md)
+  * [商品详情](biao-chuang-jian/shang-pin-xiang-qing.md)
 
