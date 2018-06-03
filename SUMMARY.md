@@ -31,4 +31,6 @@
     * [其他响应类型](ji-chu/http-xiang-ying/qi-ta-xiang-ying-lei-xing.md)
 * [表创建](biao-chuang-jian.md)
   * [前端需要数据-表](biao-chuang-jian/shang-pin-xiang-qing.md)
+* [微信开发](wei-xin-kai-fa.md)
+  * [插件](wei-xin-kai-fa/cha-jian.md)
 
