@@ -72,12 +72,24 @@ location / {
  }
 ```
 
-访问后台地址：/admin 
+访问后台地址：/admin
 
 ```
 装了虚拟数据的登陆账号密码：
 email: admin@admin.com
 password: password
+```
+
+如果您没有与虚拟用户同行，您可能希望将管理员权限分配给现有用户。 这可以通过运行以下命令轻松完成：
+
+```
+php artisan voyager:admin your@email.com
+```
+
+如果你想创建一个新的管理员用户，你可以传递--create标志，如下所示：
+
+```
+php artisan voyager:admin your@email.com --create
 ```
 
 
