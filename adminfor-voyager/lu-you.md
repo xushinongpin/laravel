@@ -14,5 +14,11 @@ Route::group(['prefix' => 'admin'], function () {
 URL/admin/slug-name
 ```
 
+例如，如果我们有一个产品表，并且我们将slug指定为产品。您现在可以访问以下URL
+
+```
+URL/admin/products
+```
+
 
 
