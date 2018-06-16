@@ -29,13 +29,27 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 
 #### Check Box 【复选框】
 
-在Voyager中，复选框转换为切换开关，正如您在上面看到的那样，on 将包含切换开关打开时的值，off 将包含开关关闭时设置的值。如果 `checked `设置为true，则复选框将打开;否则默认情况下它将关闭。
+在Voyager中，复选框转换为切换开关，正如您在上面看到的那样，on 将包含切换开关打开时的值，off 将包含开关关闭时设置的值。如果 `checked`设置为true，则复选框将打开;否则默认情况下它将关闭。
 
 ```
 {
     "on" : "On Text",
     "off" : "Off Text",
     "checked" : true
+}
+```
+
+#### Drop Down【下拉 】
+
+指定输入类型应该是下拉菜单时，您需要指定该下拉列表的值。在上面的JSON中，如果它没有值，则可以指定下拉列表的 default 。此外，在 options 对象中，您将指定 **left **选项的值和 **right **显示的文本。
+
+```
+{
+    "default" : "option1",
+    "options" : {
+        "option1": "Option 1 Text",
+        "option2": "Option 2 Text"
+    }
 }
 ```
 
