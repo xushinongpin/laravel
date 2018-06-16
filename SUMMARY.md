@@ -35,4 +35,5 @@
   * [插件](wei-xin-kai-fa/cha-jian.md)
 * [admin\_for\_Voyager](adminfor-voyager.md)
   * [安装](adminfor-voyager/an-zhuang.md)
+  * [更新](adminfor-voyager/geng-xin.md)
 
