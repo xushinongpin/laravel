@@ -60,5 +60,16 @@
 'prefix' => 'admin',
 ```
 
+```
+可以指定是否要启用多语言。然后，您可以指定默认语言和所有支持语言（语言环境）'multilingual' => [
+    'enabled' => false,
+    'default' => 'en',
+    'locales' => [
+        'en',
+        //'pt',
+    ],
+],
+```
+
 
 
