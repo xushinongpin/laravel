@@ -9,5 +9,7 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 * ADD \(字段将在您选择创建新数据类型时可见\)
 * DELETE \(不涉及删除，因此可以选中或取消选中\)
 
+您也可以选择指定要为每个字段使用的表单类型。这可以是一个TextBox，TextArea，Checkbox，Image和许多其他类型的表单元素。
 
+每个领域还有其他可以包含的细节或选项。这些类型是checkbox，dropdown，radio button和image。
 
