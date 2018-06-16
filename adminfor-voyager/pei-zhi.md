@@ -60,8 +60,10 @@
 'prefix' => 'admin',
 ```
 
+可以指定是否要启用多语言。然后，您可以指定默认语言和所有支持语言（语言环境）【al,ar,cz,de,en,es,fa,fi,fr,gl,id,it,nl,pl,pt,pt\_br,ro,ru,sv,tr,uk,zh\_CN】
+
 ```
-可以指定是否要启用多语言。然后，您可以指定默认语言和所有支持语言（语言环境）'multilingual' => [
+'multilingual' => [
     'enabled' => false,
     'default' => 'en',
     'locales' => [
