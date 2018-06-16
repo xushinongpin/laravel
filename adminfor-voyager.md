@@ -18,3 +18,5 @@ Voyager不是CMS或博客平台。但它可以用来创建一个CMS或博客平�
 
 借助Laravel＆Voyager，您可以创建您心中所需的任何应用程序。Laravel＆Voyager只是简单构建工具。
 
+官方网址： https://voyager.readme.io/docs/
+
