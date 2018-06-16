@@ -205,3 +205,38 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 
 现在在该字段中输入Nothing将最终以数据库中的`null`结束。
 
+### ⑦
+
+# Display options
+
+还有一些选项可以用来改变BREAD的显示方式。您可以将 display 键添加到您的json对象，并更改特定字段的宽度，甚至指定一个自定义ID。
+
+```
+{
+    "display": {
+        "width": "3",
+        "id": "custom_id"
+    }
+}
+```
+
+宽度显示在12格系统上。宽度设置为3将占据宽度的25％。 该ID将让你指定一个自定义的ID包装你的元素。例：
+
+```
+<div id="custom_id">
+    <!-- Your field element -->
+</div>
+```
+
+textarea行的默认数量是5.这可以更改：
+
+```
+{
+    "display": {
+        "rows": "10"
+    }
+}
+```
+
+
+
