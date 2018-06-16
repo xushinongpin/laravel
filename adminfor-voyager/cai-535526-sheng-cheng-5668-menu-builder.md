@@ -12,5 +12,15 @@ menu('main');
 menu('main', 'bootstrap');
 ```
 
+再进一步，您甚至可以指定自己的视图，并根据需要设定菜单风格。举例来说，我们有一个位于resources/views/ my\_menu.blade.php的文件，其中包含以下代码：
+
+```
+<ul>
+    @foreach($items as $menu_item)
+        <li><a href="{{ $menu_item->link() }}">{{ $menu_item->title }}</a></li>
+    @endforeach
+</ul>
+```
+
 
 
