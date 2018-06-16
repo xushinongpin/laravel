@@ -24,5 +24,5 @@ $user->roles()->get() // gets all extra as a collection
 $user->roles_all() // collection of all roles
 ```
 
-
+更多1.0升级到1.1的方法在 https://voyager.readme.io/docs/10-to-11
 
