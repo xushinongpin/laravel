@@ -42,4 +42,5 @@
   * [菜单&生成器-Menu Builder](adminfor-voyager/cai-535526-sheng-cheng-5668-menu-builder.md)
   * [数据库管理-Database](adminfor-voyager/shu-ju-ku-guan-7406-database.md)
   * [BREAD-生成器](adminfor-voyager/breadsheng-cheng-qi.md)
+  * [Settings](adminfor-voyager/settings.md)
 
