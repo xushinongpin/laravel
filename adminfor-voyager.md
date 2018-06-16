@@ -64,5 +64,21 @@ exec() has been disabled for security reasons
 disable_functions = popen,passthru,exec,system,chroot,chgrp,chown,shell_exec,ini_alter,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru
 ```
 
+访问不了就添加伪静态
+
+```
+location / {
+     try_files $uri $uri/ /index.php?$query_string;
+ }
+```
+
+访问后台地址：/admin 
+
+```
+装了虚拟数据的登陆账号密码：
+email: admin@admin.com
+password: password
+```
+
 
 
