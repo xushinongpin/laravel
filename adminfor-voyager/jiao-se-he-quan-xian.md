@@ -35,6 +35,7 @@ Voyager::canOrFail('browse_admin');
 * `browse_admin`: 用户是否可以浏览Voyager管理面板。
 
 * `browse_bread`: 用户是否可以浏览Voyager BREAD菜单部分。
+
 * `browse_media`: 用户是否可以浏览Voyager媒体部分。
 * `browse_menu`: 用户是否可以浏览Voyager菜单部分。
 * `browse_settings`: 用户是否可以浏览Voyager设置部分。
@@ -42,6 +43,30 @@ Voyager::canOrFail('browse_admin');
 * `edit_settings`: 用户是否可以编辑特定设置。
 * `add_settings`: 用户是否可以添加新设置。
 * `delete_settings`: 用户是否可以删除特定的设置。
+
+此外，您可以为您创建的每种BREAD类型生成权限。这将创建 browse, read, edit, add and delete 权限。
+
+作为一个例子，或许我们正在从产品表中创建一个新的BREAD类型。如果我们选择为我们的产品表生成权限。我们的许可密钥将为browse\_products，read\_products，edit\_products，add\_products和delete\_products。
+
+您还可以使用刀片式语法检查权限。比方说，你想检查用户是否可以browse\_posts，很简单，我们可以使用下面的语法：
+
+```
+@can('browse', $post)
+
+    I can browse posts
+
+@endcan
+
+@can('browse', $post)
+
+    I can browse posts
+
+@else
+
+    I cannot browse posts
+
+@endcan
+```
 
 
 
