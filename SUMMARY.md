@@ -33,4 +33,5 @@
   * [前端需要数据-表](biao-chuang-jian/shang-pin-xiang-qing.md)
 * [微信开发](wei-xin-kai-fa.md)
   * [插件](wei-xin-kai-fa/cha-jian.md)
+* [admin\_for\_Voyager](adminfor-voyager.md)
 
