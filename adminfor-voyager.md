@@ -23,3 +23,24 @@ DB_PASSWORD=secret
 
 注意：如果您使用Laravel 5.4进行安装，则需要手动添加服务提供程序。否则，如果您使用的是5.5版本，那么会自动发生包自动发现。
 
+```
+To add the Voyager Service Provider open up your application config/app.php file and add TCG\Voyager\VoyagerServiceProvider::class, in the providers array like so:
+
+config/app.php
+ <?php
+
+'providers' => [
+    // Laravel Framework Service Providers...
+    //...
+    
+    // Package Service Providers
+    TCG\Voyager\VoyagerServiceProvider::class,
+    // ...
+    
+    // Application Service Providers
+    // ...
+],
+```
+
+
+
