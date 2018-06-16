@@ -32,14 +32,26 @@ config/app.php
 'providers' => [
     // Laravel Framework Service Providers...
     //...
-    
+
     // Package Service Providers
     TCG\Voyager\VoyagerServiceProvider::class,
     // ...
-    
+
     // Application Service Providers
     // ...
 ],
+```
+
+安装没有虚拟数据的
+
+```
+php artisan voyager:install
+```
+
+安装有虚拟数据的
+
+```
+php artisan voyager:install --with-dummy
 ```
 
 
