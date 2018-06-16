@@ -26,8 +26,6 @@ $user->roles_all() // collection of all roles
 
 更多1.0升级到1.1的方法在 [https://voyager.readme.io/docs/10-to-11](https://voyager.readme.io/docs/10-to-11)
 
-
-
 重新发布voyager资产
 
 ```
