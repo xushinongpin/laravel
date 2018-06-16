@@ -10,5 +10,19 @@
 php artisan migrate
 ```
 
+多角色
+
+```
+获取用户的主要角色
+$user->role->name // Name of primary role
+
+获取所有额外的角色
+$user->roles() // gets all extra roles relationship
+$user->roles()->get() // gets all extra as a collection
+
+获得所有角色，包括主角和额外角色
+$user->roles_all() // collection of all roles
+```
+
 
 
