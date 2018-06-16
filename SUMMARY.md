@@ -37,4 +37,5 @@
   * [安装](adminfor-voyager/an-zhuang.md)
   * [更新](adminfor-voyager/geng-xin.md)
   * [配置](adminfor-voyager/pei-zhi.md)
+  * [路由](adminfor-voyager/lu-you.md)
 
