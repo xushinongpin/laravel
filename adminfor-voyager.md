@@ -1,16 +1,16 @@
-先创建laravel程序
+①先创建laravel程序
 
 ```
 composer create-project --prefer-dist laravel/laravel blog
 ```
 
-执行命令创建包含包
+②执行命令创建包含包
 
 ```
 $ composer require tcg/voyager
 ```
 
-创建好数据库后修改配置文件
+③创建好数据库后修改配置文件
 
 ```
 .env
@@ -42,16 +42,26 @@ config/app.php
 ],
 ```
 
-安装没有虚拟数据的
+④
+
+1、安装没有虚拟数据的
 
 ```
 php artisan voyager:install
 ```
 
-安装有虚拟数据的
+2、安装有虚拟数据的
 
 ```
 php artisan voyager:install --with-dummy
+```
+
+报错
+
+```
+exec() has been disabled for security reasons
+解决方法： 去掉php.ini里面disable_functions的exec
+disable_functions = popen,passthru,exec,system,chroot,chgrp,chown,shell_exec,ini_alter,ini_alter,ini_restore,dl,openlog,syslog,readlink,symlink,popepassthru
 ```
 
 
