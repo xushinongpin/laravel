@@ -43,4 +43,5 @@
   * [数据库管理-Database](adminfor-voyager/shu-ju-ku-guan-7406-database.md)
   * [BREAD-生成器](adminfor-voyager/breadsheng-cheng-qi.md)
   * [Settings](adminfor-voyager/settings.md)
+  * [Compass](adminfor-voyager/compass.md)
 
