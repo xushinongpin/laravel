@@ -19,7 +19,11 @@ voyager.php
     app/Providers/AppServiceProvider.php
         注册
         $this->app->bind(VoyagerBreadController::class, MyBreadController::class);
-
+        
+        
+'models' => [
+    //'namespace' => 'App\\', //指定模型的名称空间或位置。这是在从Voyager的数据库部分创建模型时使用的。如果未定义，则将使用默认的应用程序名称空间
+],
 ```
 
 
