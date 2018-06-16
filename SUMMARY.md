@@ -44,4 +44,5 @@
   * [BREAD-生成器](adminfor-voyager/breadsheng-cheng-qi.md)
   * [Settings](adminfor-voyager/settings.md)
   * [Compass](adminfor-voyager/compass.md)
+  * [角色和权限](adminfor-voyager/jiao-se-he-quan-xian.md)
 
