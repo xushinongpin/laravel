@@ -94,5 +94,12 @@ php artisan voyager:admin your@email.com
 php artisan voyager:admin your@email.com --create
 ```
 
+您应该做的第一件事是发布Voyager附带的资产
+
+```
+php artisan vendor:publish --provider=VoyagerServiceProvider
+php artisan vendor:publish --provider=ImageServiceProviderLaravel5
+```
+
 
 
