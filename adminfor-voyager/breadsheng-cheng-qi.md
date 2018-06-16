@@ -13,7 +13,7 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 
 每个领域还有其他可以包含的细节或选项。这些类型是checkbox，dropdown，radio button和image。
 
-①
+### ①
 
 其他字段选项
 
@@ -100,6 +100,18 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 ```
 {
     "format" : "%Y-%m-%d"
+}
+```
+
+### ②
+
+# Description
+
+所有类型都可以包含说明，以帮助未来的自己或使用Voyager管理面板的其他用户准确理解特定BREAD输入字段的用途，可以在可选详细信息JSON输入字段中对其进行定义：
+
+```
+{
+    "description": "A helpful description text here for your future self."
 }
 ```
 
