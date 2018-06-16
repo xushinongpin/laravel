@@ -13,3 +13,19 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 
 每个领域还有其他可以包含的细节或选项。这些类型是checkbox，dropdown，radio button和image。
 
+①
+
+其他字段选项
+
+#### Text \(Text Box, Text Area, Rich Textbox and Hidden\)【文本（文本框，文本区域，富文本框和隐藏）】
+
+文本框，文本区域，富文本框和隐藏都是文本输入。在JSON中，您可以指定输入的默认值。
+
+```
+{
+    "default" : "Default text"
+}
+```
+
+
+
