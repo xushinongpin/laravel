@@ -115,5 +115,46 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 }
 ```
 
+### ③
+
+# Validation
+
+在BREAD中每行的可选细节部分内部，您还可以使用一些简单的JSON指定验证规则。以下是如何添加验证规则或必填项和最大长度为12的示例
+
+```
+{
+    "validation": {
+        "rule": "required|max:12"
+    }
+}
+```
+
+此外，您可能希望添加一些自定义错误消息，可以这样完成：
+
+```
+{
+    "validation": {
+        "rule": "required|max:12",
+        "messages": {
+            "required": "This :attribute field is a must.",
+            "max": "This :attribute field maximum :max."
+        }
+    }
+}
+```
+
+从v.10.10.13开始，您可以通过以下方式执行必需和最大：12规则：
+
+```
+{
+    "validation": {
+        "rules": [
+            "required",
+            "max:12"
+        ]
+    }
+}
+```
+
 
 
