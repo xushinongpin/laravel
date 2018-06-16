@@ -22,5 +22,11 @@ menu('main', 'bootstrap');
 </ul>
 ```
 
+然后，您可以在任何想要显示菜单的地方call：
+
+```
+menu('main', 'my_menu');
+```
+
 
 
