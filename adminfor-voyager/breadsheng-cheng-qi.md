@@ -27,5 +27,15 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 }
 ```
 
+#### Check Box 【复选框】
+
+```
+{
+    "on" : "On Text",
+    "off" : "Off Text",
+    "checked" : true
+}
+```
+
 
 
