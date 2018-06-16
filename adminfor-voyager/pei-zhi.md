@@ -1,4 +1,4 @@
-在config/voyager.php的配置文件 
+在config/voyager.php的配置文件
 
 ```
 'user' => [
@@ -42,7 +42,6 @@
 'storage' => [
     'disk' => 'public',//
 ],
-
 ```
 
 您可能希望在Voyager数据库部分隐藏一些数据库表。在数据库配置中，您可以选择要隐藏哪些表。
@@ -53,6 +52,12 @@
         'hidden' => ['migrations', 'data_rows', 'data_types', 'menu_items', 'password_resets', 'permission_role', 'settings'],
     ],
 ],
+```
+
+指定访问Voyager的备用前缀。而不是访问/admin，也许你想访问/backend Voyager管理员
+
+```
+'prefix' => 'admin',
 ```
 
 
