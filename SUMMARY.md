@@ -39,4 +39,5 @@
   * [配置](adminfor-voyager/pei-zhi.md)
   * [路由](adminfor-voyager/lu-you.md)
   * [媒体上传-Media](adminfor-voyager/mei-ti-shang-4f20-media.md)
+  * [菜单&生成器-Menu Builder](adminfor-voyager/cai-535526-sheng-cheng-5668-menu-builder.md)
 
