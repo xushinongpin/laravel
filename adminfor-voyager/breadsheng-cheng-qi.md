@@ -173,3 +173,13 @@ BROWSE \(字段将在您浏览当前数据时显示\)
 
 这将自动从title字段的输入中生成slug。如果slug已经存在，只有在forceUpdate设置为启用时才会更新，默认情况下禁用。
 
+
+
+### ⑤
+
+# Relationships
+
+使用BREAD构建器，您可以轻松创建表之间的关系。在页面底部，你会看到一个新的按钮，说'创建关系'
+
+[更多介绍](https://voyager.readme.io/docs/relationships)
+
