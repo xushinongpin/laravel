@@ -28,6 +28,9 @@ voyager.php
 
 'assets_path' => '/vendor/tcg/voyager/assets',//希望指定不同的资产路径【如果您的网站位于子文件夹中，则可能需要将该目录包含到路径的开头。如果您希望复制已发布的资产并自定义您的资产，也可以使用此功能。】
 
+'storage' => [
+    'disk' => 'public',//默认情况下，Voyager将使用公共本地存储。你还可以在config/filesystems.php里面使用任何驱动。这意味着您可以使用S3，Google云端存储或任何其他文件存储系统。
+],
 ```
 
 
