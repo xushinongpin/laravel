@@ -73,5 +73,34 @@
 ],
 ```
 
+在 dashboard 配置中，您可以添加navbar\_items，使data\_tables响应并管理仪表板**widgets**
+
+```
+'dashboard' => [
+    'navbar_items' => [//通过包括'route'，'icon_class'和'target_blank'，在主用户navbar下拉菜单中包含新路线。
+        'Profile' => [
+            'route'         => 'voyager.profile',
+            'classes'       => 'class-full-of-rum',
+            'icon_class'    => 'voyager-person',
+        ],
+        'Home' => [
+            'route'         => '/',
+            'icon_class'    => 'voyager-home',
+            'target_blank'  => true,
+        ],
+        'Logout' => [
+            'route'      => 'voyager.logout',
+            'icon_class' => 'voyager-power',
+        ],
+    ],
+    'widgets' => [//在这里，您可以管理仪表板上的小部件。您可以通过查看tcg/voyager/src/Widgets中的当前窗口小部件来查看示例窗口小部件类
+        'TCG\\Voyager\\Widgets\\UserDimmer',
+        'TCG\\Voyager\\Widgets\\PostDimmer',
+        'TCG\\Voyager\\Widgets\\PageDimmer',
+    ],
+],
+//data_tables  如果您将'responsive'设置为true，则数据表将作出响应。
+```
+
 
 
