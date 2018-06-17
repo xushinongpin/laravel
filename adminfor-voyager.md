@@ -12,11 +12,11 @@ Voyager只是您的Laravel应用程序的管理员。无论您希望您的应用
 
 * 内容管理系统（CMS）
 * 一个博客平台
-* Wordpress（Bleh！😜）
+* Wordpress
 
 Voyager不是CMS或博客平台。但它可以用来创建一个CMS或博客平台，但开箱即不是那些。如前一节所述，您可以完全控制应用程序的功能以及它的功能。
 
 借助Laravel＆Voyager，您可以创建您心中所需的任何应用程序。Laravel＆Voyager只是简单构建工具。
 
-官方网址： https://voyager.readme.io/docs/
+官方网址： [https://voyager.readme.io/docs/](https://voyager.readme.io/docs/)
 
