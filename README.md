@@ -1,5 +1,7 @@
 # laravel5.6个人学习笔记
 
+开发工具 https://www.jetbrains.com/phpstorm/download/\#section=windows 注册破解工具： http://idea.lanyus.com/
+
 学无止境
 
 配置文件修改：php.ini 里面 disable\_functions = passthru,...... 中的passthru 去掉
