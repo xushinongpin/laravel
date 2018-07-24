@@ -1,6 +1,8 @@
 # laravel5.6个人学习笔记
 
-开发工具 https://www.jetbrains.com/phpstorm/download/\#section=windows 注册破解工具： http://idea.lanyus.com/
+开发工具 [https://www.jetbrains.com/phpstorm/download/\#section=windows](https://www.jetbrains.com/phpstorm/download/#section=windows) 注册破解工具： [http://idea.lanyus.com/](http://idea.lanyus.com/)
+
+破解文件放到 \JetBrains\PhpStorm 2018.1.6\lib目录下
 
 学无止境
 
