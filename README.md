@@ -6,6 +6,14 @@
 
 破解文件放到 \JetBrains\PhpStorm 2018.1.6\lib目录下
 
+
+
+window上 [Composer安装](https://getcomposer.org/Composer-Setup.exe)
+
+
+
+
+
 学无止境
 
 配置文件修改：php.ini 里面 disable\_functions = passthru,...... 中的passthru 去掉
