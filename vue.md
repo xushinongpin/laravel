@@ -1,4 +1,4 @@
-使用前先安装 
+使用前先安装
 
 ```
 npm install
@@ -9,6 +9,12 @@ npm install
 ```
 npm run dev   //每次更改Vue组件时都应该运行该命令
 npm run watch  //命令来监视每次修改组件并自动重新编译它们
+```
+
+运行Artisan命令来构建应用程序的身份验证和注册
+
+```
+php artisan make:auth
 ```
 
 
