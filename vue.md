@@ -17,5 +17,15 @@ npm run watch  //命令来监视每次修改组件并自动重新编译它们
 php artisan make:auth
 ```
 
+引入测试
+
+```
+@extends('layouts.app')
+
+@section('content')
+    <example-component></example-component>
+@endsection
+```
+
 
 
