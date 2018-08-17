@@ -12,6 +12,8 @@ nodejs的[npm使用](https://nodejs.org/zh-cn/download/)
 
 
 
+开发完之后可以使用性能分析工具[ xhprof](http://php.net/manual/zh/book.xhprof.php) 与网页测试分析意见工具 [谷歌的](https://developers.google.com/speed/pagespeed/insights)
+
 学无止境
 
 配置文件修改：php.ini 里面 disable\_functions = passthru,...... 中的passthru 去掉
