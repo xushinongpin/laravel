@@ -1,3 +1,5 @@
+# 该使用享元模式的时候使用享元模式【可能多个同时调用，做个享元模式（池容器）对服务器性能有帮助】
+
 # laravel5.6个人学习笔记
 
 [文档地址](https://laravel.isoso.vip/)
@@ -9,8 +11,6 @@
 window上 [Composer安装](https://getcomposer.org/Composer-Setup.exe)
 
 nodejs的[npm使用](https://nodejs.org/zh-cn/download/)
-
-
 
 开发完之后可以使用性能分析工具[ xhprof](http://php.net/manual/zh/book.xhprof.php) 与网页测试分析意见工具 [谷歌的](https://developers.google.com/speed/pagespeed/insights)
 
