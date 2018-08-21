@@ -1,5 +1,91 @@
 # 该使用享元模式的时候使用享元模式【可能多个同时调用，做个享元模式（池容器）对服务器性能有帮助】
 
+eg:
+
+```
+
+<?php
+/**
+ * php享元模式
+ * copyright (c) http://blog.csdn.net/CleverCode
+ *
+ */
+//外部变化
+class User
+{
+    public $name;
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+    public function getName()
+    {
+        return $this->name;
+    }
+}
+
+abstract class WebSite
+{
+    abstract function myUse(User $user);
+}
+
+//具体的网站
+class ConWebSite extends WebSite
+{
+    private $name;
+    public function __construct($name)
+    {
+        $this->name = $name;
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    function myUse(User $user)
+    {
+        echo "网站:".$this->name." 用户:".$user->getName()."<br/>";
+    }
+
+}
+
+//工厂
+class WebSiteFactory
+{
+    private $hash = array();
+    public function getWebSite($key)
+    {
+        if(false == isset($this->hash[$key]))
+        {
+            $this->hash[$key] = new ConWebSite($key);
+            echo "来一次<br/>";
+        }
+        return $this->hash[$key];
+    }
+}
+
+class Client
+{
+    public static function main($argv)
+    {
+        $webSiteFactory = new WebSiteFactory();
+
+        $boke = $webSiteFactory->getWebSite('博客');
+        $boke->myUse(new User('张三'));
+        $weiBo = $webSiteFactory->getWebSite('微博');
+        $weiBo->myUse(new User('王五'));
+        $boke2 = $webSiteFactory->getWebSite('新浪');
+        $boke2->myUse(new User('李四'));
+        $boke2 = $webSiteFactory->getWebSite('新浪');
+        $boke2->myUse(new User('六六'));
+        $boke2 = $webSiteFactory->getWebSite('新浪');
+        $boke2->myUse(new User('七七'));
+    }
+}
+Client::main($argv);
+```
+
 # laravel5.6个人学习笔记
 
 [文档地址](https://laravel.isoso.vip/)
