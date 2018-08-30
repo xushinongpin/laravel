@@ -6,6 +6,16 @@ Route::group(array('domain'=>'{account}.21cn.app'),function (){
         dd($account);
     });
 });
+
+----------------------------------------------
+define('DOMAIN','21cn.app');
+//定义泛指域名跳转
+Route::group(array('domain'=>'{account}.'.DOMAIN),function (){
+    Route::get('/',function ($account){
+        return redirect('http://'.DOMAIN.'?shopname='.$account,302);
+        //dd($account);
+    });
+});
 ```
 
 
