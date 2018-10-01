@@ -1,9 +1,10 @@
+GitHub地址： https://github.com/xushinongpin/laravel
+
 # 该使用享元模式的时候使用享元模式【可能多个同时调用，做个享元模式（池容器）对服务器性能有帮助】
 
 eg:
 
 ```
-
 <?php
 /**
  * php享元模式
