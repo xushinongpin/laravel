@@ -189,24 +189,76 @@ config/admin.php
     'extensions' => [
 
         'wang-editor' => [
-        
+
             // 如果要关掉这个扩展，设置为false
             'enable' => true,
-            
+
             // 编辑器的配置
             'config' => [
-                
+
             ]
         ]
     ]
-    
+
 编辑器的配置可以到wangEditor文档找到，比如配置上传图片的地址上传图片
     'config' => [
         'uploadImgServer' => '/upload'
     ]
-    
+
 在form表单中使用它：
     $form->editor('content');
+```
+
+十一： 
+
+```
+composer require jxlwqq/quill
+
+php artisan vendor:publish --tag=laravel-admin-quill
+
+config/admin.php
+    'extensions' => [
+        'quill' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true,
+            'config' => [
+                'modules' => [
+                    'syntax' => true,
+                    'toolbar' =>
+                        [
+                            ['size' => []],
+                            ['header' => []],
+                            'bold',
+                            'italic',
+                            'underline',
+                            'strike',
+                            ['script' => 'super'],
+                            ['script' => 'sub'],
+                            ['color' => []],
+                            ['background' => []],
+                            'blockquote',
+                            'code-block',
+                            ['list' => 'ordered'],
+                            ['list' => 'bullet'],
+                            ['indent' => '-1'],
+                            ['indent' => '+1'],
+                            'direction',
+                            ['align' => []],
+                            'link',
+                            'image',
+                            'video',
+                            'formula',
+                            'clean'
+                        ],
+                ],
+                'theme' => 'snow',
+                'height' => '200px',
+            ]
+        ]
+    ]
+    
+from表单使用：  
+    $form->quill('content');
 ```
 
 
