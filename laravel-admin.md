@@ -430,11 +430,17 @@ from表单使用
     $form->ckeditor('content')->options(['lang' => 'fr', 'height' => 500]);
 ```
 
-十九： 
+十九：
 
 ```
 composer require dianwoung/large-file-upload
 php artisan aetherupload:publish
+php artisan vendor:publish --tag=large-file-upload
+
+app/Admin/bootstrap.php
+    Encore\Admin\Form::extend('largefile', \Encore\LargeFileUpload\LargeFileField::class);
+控制器使用
+    $form->largefile('ColumnName', 'LabelName');
 ```
 
 
