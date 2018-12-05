@@ -114,5 +114,23 @@ config/admin.php
             ],
         ],
 
+⑦ laravel-admin-ext/scheduling
+
+```
+$ composer require laravel-admin-ext/scheduling
+$ php artisan admin:import scheduling
+
+app/Console/Kernel.php
+    class Kernel extends ConsoleKernel
+    {
+        protected function schedule(Schedule $schedule)
+        {
+            $schedule->command('inspire')->everyTenMinutes();
+            
+            $schedule->command('route:list')->dailyAt('02:00');
+        }
+    }
+```
+
 
 
