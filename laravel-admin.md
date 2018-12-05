@@ -338,16 +338,16 @@ config/admin.php
     'extensions' => [
 
         'simplemde' => [
-        
+
             // Set to false if you want to disable this extension
             'enable' => true,
-            
+
             // If you want to set an alias for the calling method
             //'alias' => 'markdown',
-            
+
             // Editor configuration
             'config' => [
-                
+
             ]
         ]
     ]
@@ -357,6 +357,11 @@ config配置如：
         'placeholder' => 'xxxx',
         ....
     ]
+
+form表单中使用： 
+    $form->simplemde('content');
+    $form->simplemde('content')->height(500);
+    $form->markdown('content');
 ```
 
 
