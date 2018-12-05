@@ -656,7 +656,7 @@ form表单中：
     $form->cropper('content','label')->cRatio($width,$height);//强制剪裁尺寸
 ```
 
-三十：
+三十：laravel-admin-ext/grid-lightbox
 
     composer require laravel-admin-ext/grid-lightbox
     php artisan vendor:publish --tag=laravel-admin-grid-lightbox
@@ -683,6 +683,19 @@ form表单中：
     //width & height properties
     $grid->picture()->lightbox(['width' => 50, 'height' => 50]);
     $grid->picture()->gallery(['width' => 50, 'height' => 50]);
+
+三十一： laravel-admin-ext/sparkline
+
+    composer require laravel-admin-ext/sparkline
+    php artisan vendor:publish --tag=laravel-admin-sparkline
+
+    config/admin.php
+        'extensions' => [
+            'sparkline' => [
+                // Set to `false` if you want to disable this extension
+                'enable' => true,
+            ]
+        ]
 
 
 
