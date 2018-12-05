@@ -930,5 +930,45 @@ config：
                 ->header('Chartjs')
                 ->body(new Box('Bar chart', view('admin.chartjs')));
 
+三十八 laravel-admin-ext/daterangepicker [文档](http://www.daterangepicker.com/)
+
+    composer require laravel-admin-ext/daterangepicker
+    php artisan vendor:publish --tag=laravel-admin-daterangepicker
+
+    config/admin.php
+        'extensions' => [
+
+            'daterangepicker' => [
+
+                // Set to `false` if you want to disable this extension
+                'enable' => true,
+
+                // Find more configurations http://www.daterangepicker.com/
+                'config' => [
+
+                ]
+            ]
+        ]
+
+    form表单
+        //Single column
+
+        $form->daterangepicker('date_range', 'Date range');
+
+        // Predefine Date Ranges.
+        $form->daterangepicker('date_range', 'Date range')
+            ->ranges([
+                'Today'        => [Carbon::today()->toDateString(), Carbon::today()->toDateString()],
+                'Yesterday'    => [Carbon::yesterday()->toDateString(), Carbon::yesterday()->toDateString()],
+                'Last 7 Days'  => [Carbon::today()->subDays(6)->toDateString(), Carbon::today()->toDateString()],
+                'Last 14 Days' => [Carbon::today()->subDays(13)->toDateString(), Carbon::today()->toDateString()],
+                'Last 30 Days' => [Carbon::today()->subDays(29)->toDateString(), Carbon::today()->toDateString()],
+                'This Month'   => [Carbon::today()->startOfMonth()->toDateString(), Carbon::today()->endOfMonth()->toDateString()],
+                'Last Month'   => [Carbon::today()->subMonth()->firstOfMonth()->toDateString(), Carbon::today()->subMonth()->lastOfMonth()->toDateString()],
+            ]);
+
+        // multilpe column
+        $form->daterangepicker(['created_at', 'updated_at'], 'Date range');
+
 
 
