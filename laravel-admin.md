@@ -209,7 +209,7 @@ config/admin.php
     $form->editor('content');
 ```
 
-十一： 
+十一：
 
 ```
 composer require jxlwqq/quill
@@ -256,9 +256,37 @@ config/admin.php
             ]
         ]
     ]
-    
+
 from表单使用：  
     $form->quill('content');
+```
+
+十二：  laravel-admin-ext/china-distpicker
+
+```
+composer require laravel-admin-ext/china-distpicker
+php artisan vendor:publish --tag=laravel-admin-china-distpicker
+
+config/admin.php
+    'china-distpicker' => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+        ]
+        
+form中使用：
+    $form->distpicker(['province_id', 'city_id', 'district_id']);
+可以设置每个字段的placeholder
+    $form->distpicker([
+        'province_id' => '省',
+        'city_id'     => '市',
+        'district_id' => '区'
+    ]);
+设置label
+    $form->distpicker(['province_id', 'city_id', 'district_id'], '请选择区域');
+设置自动选择, 可以设置1,2,3 表示自动选择到第几级
+    $form->distpicker(['province_id', 'city_id', 'district_id'])->autoselect(1);
+表单提交的时候，默认是使用地域名称作为表单值提交，如果你要提交地域编码，使用下面的方法：
+    $form->distpicker(['province_id', 'city_id', 'district_id'])->attribute('data-value-type', 'code');
 ```
 
 
