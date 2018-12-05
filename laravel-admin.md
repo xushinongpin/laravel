@@ -611,7 +611,7 @@ form表单
     $form->starRating('rate');
 ```
 
-二十七： 
+二十七：jxlwqq/code-mirror【暂时未知怎么用】
 
 ```
 composer require jxlwqq/code-mirror
