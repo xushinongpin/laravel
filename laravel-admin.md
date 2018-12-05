@@ -484,15 +484,15 @@ config/admin.php
     $form->editor('content');
     // options 中参数会覆盖 extensions.ueditor.config 中参数
     $form->editor('content')->options(['initialFrameHeight' => 800]);
-    
-    
+
+
 overtrue/laravel-ueditor配置
     composer require "overtrue/laravel-ueditor:~1.0"
-    
+
     config/app.php
         providers 
             Overtrue\LaravelUEditor\UEditorServiceProvider::class,
-            
+
     php artisan vendor:publish --provider='Overtrue\LaravelUEditor\UEditorServiceProvider'
     使用    
         @include('vendor.ueditor.assets')
@@ -504,9 +504,24 @@ overtrue/laravel-ueditor配置
                 ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
             });
         </script>
-        
+
         <!-- 编辑器容器 -->
         <script id="container" name="content" type="text/plain"></script>
+```
+
+二十二：  jxlwqq/env-manager
+
+```
+composer require jxlwqq/env-manager
+php artisan admin:import env-manager
+
+config/admin.php
+    'extensions' => [
+        'env-manager' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true
+        ]
+    ]
 ```
 
 
