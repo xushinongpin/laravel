@@ -327,7 +327,37 @@ php artisan vendor:publish --tag=laravel-admin-media-player
     $grid->foo()->video(['videoWidth' => 720, 'videoHeight' => 480]);
 ```
 
-十五： 
+十五： laravel-admin-ext/simplemde  [config更多配置](https://github.com/sparksuite/simplemde-markdown-editor#configuration)
+
+```
+composer require laravel-admin-ext/simplemde
+php artisan vendor:publish --tag=laravel-admin-simplemde
+
+config/admin.php
+
+    'extensions' => [
+
+        'simplemde' => [
+        
+            // Set to false if you want to disable this extension
+            'enable' => true,
+            
+            // If you want to set an alias for the calling method
+            //'alias' => 'markdown',
+            
+            // Editor configuration
+            'config' => [
+                
+            ]
+        ]
+    ]
+config配置如： 
+    'config' => [
+        'autofocus'   => true,
+        'placeholder' => 'xxxx',
+        ....
+    ]
+```
 
 
 
