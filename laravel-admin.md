@@ -606,9 +606,16 @@ config/admin.php
              ]
          ]
      ]
-     
+
 form表单
     $form->starRating('rate');
+```
+
+二十七： 
+
+```
+composer require jxlwqq/code-mirror
+php artisan vendor:publish --tag=laravel-admin-code-mirror
 ```
 
 
