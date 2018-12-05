@@ -306,6 +306,25 @@ form中使用：
 ```
 composer require laravel-admin-ext/media-player
 php artisan vendor:publish --tag=laravel-admin-media-player
+
+网页上输出
+    // Add a play button to the current field column. After clicking it will open a modal to play the video file.
+    $grid->foo()->video();
+    
+    // Add an audio player to the current field column
+    $grid->foo()->audio();
+    
+    // This field will be displayed as a video player
+    $show->foo()->video();
+    
+    // this field will be displayed as an audio player
+    $show->foo()->audio();
+    
+    //If the field foo is another path or a file path under another server, you can use the following settings.
+    $grid->foo()->video(['server' => 'http:www.foo.com/']);
+    
+    //This player feature of this extension is based on mediaelement and can be referenced API and Configuration Add more settings to the player.For example, set the size of the player:
+    $grid->foo()->video(['videoWidth' => 720, 'videoHeight' => 480]);
 ```
 
 
