@@ -637,7 +637,7 @@ php artisan vendor:publish --tag=laravel-admin-code-mirror
                 ]
             ]
 
-二十九： 
+二十九：
 
 ```
 composer require laravel-admin-ext/cropper
@@ -650,6 +650,10 @@ config/admin.php
             'enable' => true,
         ]
     ]
+    
+form表单中：
+    $form->cropper('content','label');
+    $form->cropper('content','label')->cRatio($width,$height);//强制剪裁尺寸
 ```
 
 
