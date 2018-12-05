@@ -783,7 +783,7 @@ from表单
     $form->php('code')->height(500);
 ```
 
-三十四：laravel-admin-ext/js-editor 
+三十四：laravel-admin-ext/js-editor
 
     composer require laravel-admin-ext/js-editor
     php artisan vendor:publish --tag=laravel-admin-code-mirror
@@ -809,6 +809,33 @@ from表单
         $form->jsond('code');
         $form->typescript('code');
         $form->js('code')->height(500);//设置高度
+
+三十五
+
+```
+composer require laravel-admin-ext/css-editor
+php artisan vendor:publish --tag=laravel-admin-code-mirror
+
+config/admin.php
+    'extensions' => [
+
+        'css-editor' => [
+        
+            // set to false if you want to disable this exteions
+            'enable' => true,
+            
+            // editor configuration 
+            'config' => [
+                
+            ]
+        ]
+    ]
+form表单中    
+    $form->css('code');
+    $form->scss('code');
+    $form->less('code');
+    $form->css('code')->height(500);//设置高度
+```
 
 
 
