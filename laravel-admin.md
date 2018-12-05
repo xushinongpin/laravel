@@ -583,6 +583,9 @@ config/admin.php
             ]
         ]
     ]
+    
+form表单使用
+    $form->simditor('content');
 ```
 
 
