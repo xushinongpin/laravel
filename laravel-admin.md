@@ -366,10 +366,17 @@ form表单中使用：
 
 十六：  laravel-admin-ext/file-browser
 
-```
-composer require laravel-admin-ext/file-browser
-php artisan admin:import media-manager  //发布media-manager的文件(如已发布，可跳过),否则会报错
-```
+    composer require laravel-admin-ext/file-browser
+    php artisan admin:import media-manager  //发布media-manager的文件(如已发布，可跳过),否则会报错
+
+    config/admin.php
+        'extensions' => [
+            'media-manager' => [
+                // Select a local disk that you configured in `config/filesystem.php`
+                'disk' => 'public'
+            ],
+        ],
+
 
 
 
