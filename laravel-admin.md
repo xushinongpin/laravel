@@ -859,13 +859,26 @@ config/admin.php
     ]
 form表单
     $form->summernote('content');
-    
+
 config：
     'config' => [
         'lang'   => 'zh-CN',
         'height' => 500,
     ]
 ```
+
+三十七 laravel-admin-ext/chartjs
+
+    composer require laravel-admin-ext/chartjs
+    php artisan vendor:publish --tag=laravel-admin-chartjs
+
+    config/admin.php
+        'extensions' => [
+            'chartjs' => [
+                // Set to `false` if you want to disable this extension
+                'enable' => true,
+            ]
+        ]
 
 
 
