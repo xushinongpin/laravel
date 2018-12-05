@@ -462,7 +462,7 @@ config/admin.php
     ]
 ```
 
-二十一： codingyu/ueditor
+二十一： codingyu/ueditor 后端配置 config/ueditor.php，参考 [overtrue/laravel-ueditor](https://github.com/overtrue/laravel-ueditor)
 
 ```
 composer require codingyu/ueditor
@@ -479,6 +479,11 @@ config/admin.php
             ]
         ]
     ]
+    
+在form表单中使用它：
+    $form->editor('content');
+    // options 中参数会覆盖 extensions.ueditor.config 中参数
+    $form->editor('content')->options(['initialFrameHeight' => 800]);
 ```
 
 
