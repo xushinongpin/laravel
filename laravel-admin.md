@@ -730,5 +730,24 @@ form表单中：
                 'spotRadius' => 2
             ]);
 
+三十二： laravel-admin-ext/python-editor   [文档地址](https://codemirror.net/)
+
+```
+composer require laravel-admin-ext/python-editor
+php artisan vendor:publish --tag=laravel-admin-code-mirror
+
+config/admin.php
+    'extensions' => [
+        'python-editor' => [
+            //Set to false if you want to disable this extension
+            'enable' => true,
+            // Editor configuration
+            'config' => [
+                
+            ]
+        ]
+    ]
+```
+
 
 
