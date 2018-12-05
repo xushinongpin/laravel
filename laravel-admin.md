@@ -810,7 +810,7 @@ from表单
         $form->typescript('code');
         $form->js('code')->height(500);//设置高度
 
-三十五
+三十五 laravel-admin-ext/css-editor
 
 ```
 composer require laravel-admin-ext/css-editor
@@ -820,13 +820,13 @@ config/admin.php
     'extensions' => [
 
         'css-editor' => [
-        
+
             // set to false if you want to disable this exteions
             'enable' => true,
-            
+
             // editor configuration 
             'config' => [
-                
+
             ]
         ]
     ]
@@ -835,6 +835,33 @@ form表单中
     $form->scss('code');
     $form->less('code');
     $form->css('code')->height(500);//设置高度
+```
+
+三十六 laravel-admin-ext/summernote  [config更多配置](https://summernote.org/getting-started/)
+
+```
+composer require laravel-admin-ext/summernote
+php artisan vendor:publish --tag=laravel-admin-summernote
+
+config/admin.php
+    'extensions' => [
+
+        'summernote' => [
+        
+            //Set to false if you want to disable this extension
+            'enable' => true,
+            
+            // Editor configuration
+            'config' => [
+                
+            ]
+        ]
+    ]
+config：
+    'config' => [
+        'lang'   => 'zh-CN',
+        'height' => 500,
+    ]
 ```
 
 
