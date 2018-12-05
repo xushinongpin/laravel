@@ -398,5 +398,32 @@ composer require laravel-admin-ext/id-validator
 php artisan admin:import id-validator
 ```
 
+十八：   laravel-admin-ext/ckeditor  [config更多配置](https://ckeditor.com/docs/ckeditor4/latest/guide/)
+
+```
+composer require laravel-admin-ext/ckeditor
+php artisan vendor:publish --tag=laravel-admin-ckeditor
+
+config/admin.php
+    'extensions' => [
+
+        'ckeditor' => [
+        
+            //Set to false if you want to disable this extension
+            'enable' => true,
+            
+            // Editor configuration
+            'config' => [
+                
+            ]
+        ]
+    ]
+The configuration of the editor can be found in CKEditor Documentation, such as configuration language and height.
+    'config' => [
+        'lang'   => 'zh-CN',
+        'height' => 500,
+    ]
+```
+
 
 
