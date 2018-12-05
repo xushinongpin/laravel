@@ -391,5 +391,12 @@ form表单中使用：
             return json_decode($v, true);
         }
 
+十七： 身份证验证laravel-admin-ext/id-validator
+
+```
+composer require laravel-admin-ext/id-validator
+php artisan admin:import id-validator
+```
+
 
 
