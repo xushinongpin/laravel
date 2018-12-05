@@ -83,9 +83,9 @@ $ php artisan admin:import api-tester
 
 config/admin.php
     'extensions' => [
-    
+
         'api-tester' => [
-        
+
             // route prefix for APIs
             'prefix' => 'api',
 
