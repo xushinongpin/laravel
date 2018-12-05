@@ -542,9 +542,16 @@ config/admin.php
                 ],
         ]
     ]
-    
+
 form表单
     $form->json('content');
+```
+
+二十四： 
+
+```
+composer require jxlwqq/composer-viewer
+php artisan admin:import composer-viewser 【php配置的disable_functions里面需要去掉一些限制，具体看报错】
 ```
 
 
