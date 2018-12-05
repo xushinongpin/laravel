@@ -713,7 +713,8 @@ form表单中：
                 });
             });
         </script>
-        使用
+
+        使用 use Encore\Admin\Widgets\Box;
         public function index(Content $content)
         {
             return $content
