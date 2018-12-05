@@ -618,7 +618,7 @@ composer require jxlwqq/code-mirror
 php artisan vendor:publish --tag=laravel-admin-code-mirror
 ```
 
-二十八： laravel-admin-ext/phpinfo 
+二十八： laravel-admin-ext/phpinfo
 
     composer require laravel-admin-ext/phpinfo
     php artisan admin:import phpinfo
@@ -636,6 +636,21 @@ php artisan vendor:publish --tag=laravel-admin-code-mirror
                     //'path' => '~phpinfo',
                 ]
             ]
+
+二十九： 
+
+```
+composer require laravel-admin-ext/cropper
+php artisan vendor:publish --tag=laravel-admin-cropper
+
+config/admin.php
+    'extensions' => [
+        'cropper' => [
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+        ]
+    ]
+```
 
 
 
