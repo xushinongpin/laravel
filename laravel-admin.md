@@ -980,17 +980,17 @@ config/admin.php
     'extensions' => [
 
         'clike-editor' => [
-        
+
             // 如果要关掉这个扩展，设置为false
             'enable' => true,
-            
+
             // 编辑器的配置
             'config' => [
-                
+
             ]
         ]
     ]
-    
+
 form表单
     $form->clang('code');
     $form->cpp('code');
@@ -1001,6 +1001,14 @@ form表单
     $form->kotlin('code');
     $form->ceylon('code');
     $form->clang('code')->height(500);//设置高度
+```
+
+四十：
+
+```
+composer require "laravel-admin-ext/messages @dev"
+php artisan migrate
+php artisan admin:import Encore\\Admin\\Message\\Messages
 ```
 
 
