@@ -547,14 +547,14 @@ form表单
     $form->json('content');
 ```
 
-二十四：
+二十四：jxlwqq/composer-viewer
 
 ```
 composer require jxlwqq/composer-viewer
 php artisan admin:import composer-viewser 【php配置的disable_functions里面需要去掉一些限制，具体看报错】
 ```
 
-二十五： 
+二十五： jxlwqq/simditor  [文档](https://simditor.tower.im/docs/doc-usage.html)
 
 ```
 composer require jxlwqq/simditor
