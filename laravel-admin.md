@@ -547,11 +547,42 @@ form表单
     $form->json('content');
 ```
 
-二十四： 
+二十四：
 
 ```
 composer require jxlwqq/composer-viewer
 php artisan admin:import composer-viewser 【php配置的disable_functions里面需要去掉一些限制，具体看报错】
+```
+
+二十五： 
+
+```
+composer require jxlwqq/simditor
+php artisan vendor:publish --tag=laravel-admin-simditor
+
+config/admin.php
+    'extensions' => [
+        'simditor' => [
+            // Set to false if you want to disable this extension
+            'enable' => true,
+            // Editor configuration
+            'config' => [
+                'upload' => [
+                    'url' => '/admin/api/upload', # example api route: admin/api/upload
+                    'fileKey' => 'upload_file',
+                    'connectionCount' => 3,
+                    'leaveConfirm' => 'Uploading is in progress, are you sure to leave this page?'
+                ],
+                'tabIndent' => true,
+                'toolbar' => ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment'],
+                'toolbarFloat' => true,
+                'toolbarFloatOffset' => 0,
+                'toolbarHidden' => false,
+                'pasteImage' => true,
+                'cleanPaste' => false,
+            ]
+        ]
+    ]
 ```
 
 
