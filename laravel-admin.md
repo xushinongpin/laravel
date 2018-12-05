@@ -430,7 +430,7 @@ from表单使用
     $form->ckeditor('content')->options(['lang' => 'fr', 'height' => 500]);
 ```
 
-十九：
+十九：dianwoung/large-file-upload [更多详情](https://github.com/peinhu/AetherUpload-Laravel)  建议：所有上传目录权限为755，文件权限为644。
 
 ```
 composer require dianwoung/large-file-upload
