@@ -479,11 +479,34 @@ config/admin.php
             ]
         ]
     ]
-    
+
 在form表单中使用它：
     $form->editor('content');
     // options 中参数会覆盖 extensions.ueditor.config 中参数
     $form->editor('content')->options(['initialFrameHeight' => 800]);
+    
+    
+overtrue/laravel-ueditor配置
+    composer require "overtrue/laravel-ueditor:~1.0"
+    
+    config/app.php
+        providers 
+            Overtrue\LaravelUEditor\UEditorServiceProvider::class,
+            
+    php artisan vendor:publish --provider='Overtrue\LaravelUEditor\UEditorServiceProvider'
+    使用    
+        @include('vendor.ueditor.assets')
+    初始化
+        <!-- 实例化编辑器 -->
+        <script type="text/javascript">
+            var ue = UE.getEditor('container');
+            ue.ready(function() {
+                ue.execCommand('serverparam', '_token', '{{ csrf_token() }}'); // 设置 CSRF token.
+            });
+        </script>
+        
+        <!-- 编辑器容器 -->
+        <script id="container" name="content" type="text/plain"></script>
 ```
 
 
