@@ -650,11 +650,24 @@ config/admin.php
             'enable' => true,
         ]
     ]
-    
+
 form表单中：
     $form->cropper('content','label');
     $form->cropper('content','label')->cRatio($width,$height);//强制剪裁尺寸
 ```
+
+三十： 
+
+    composer require laravel-admin-ext/grid-lightbox
+    php artisan vendor:publish --tag=laravel-admin-grid-lightbox
+
+    config/admin.php
+        'extensions' => [
+            'grid-lightbox' => [
+                // Set to `false` if you want to disable this extension
+                'enable' => true,
+            ]
+        ]
 
 
 
