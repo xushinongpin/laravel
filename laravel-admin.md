@@ -847,16 +847,19 @@ config/admin.php
     'extensions' => [
 
         'summernote' => [
-        
+
             //Set to false if you want to disable this extension
             'enable' => true,
-            
+
             // Editor configuration
             'config' => [
-                
+
             ]
         ]
     ]
+form表单
+    $form->summernote('content');
+    
 config：
     'config' => [
         'lang'   => 'zh-CN',
