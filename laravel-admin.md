@@ -146,29 +146,37 @@ $ php artisan admin:import reporter
 app/Exceptions/Handler.php
     <?php
         namespace App\Exceptions;
-        
+
         use Encore\Admin\Reporter\Reporter;
         use Exception;
         use Illuminate\Auth\AuthenticationException;
         use Illuminate\Validation\ValidationException;
         use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
-        
+
         class Handler extends ExceptionHandler
         {
             ...
-        
+
             public function report(Exception $exception)
             {
                 if ($this->shouldReport($exception)) {
                     Reporter::report($exception);
                 }
-        
+
         //        parent::report($exception);
             }
-            
+
             ...
-        
+
         }
+```
+
+⑨ laravel-admin-ext/redis-manager
+
+```
+$ composer require laravel-admin-ext/redis-manager
+
+$ php artisan admin:import redis-manager
 ```
 
 
