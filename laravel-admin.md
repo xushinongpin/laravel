@@ -588,7 +588,7 @@ form表单使用
     $form->simditor('content');
 ```
 
-二十六： jxlwqq/star-rating 
+二十六： jxlwqq/star-rating
 
 ```
 composer require jxlwqq/star-rating
@@ -599,13 +599,16 @@ config/admin.php
          'star-rating' => [
              // set to false if you want to disable this extension
              'enable' => true,
-             
+
              // configuration
              'config' => [
                  'min' => 1, 'max' => 5, 'step' => 1, 'size' => 'xs'
              ]
          ]
      ]
+     
+form表单
+    $form->starRating('rate');
 ```
 
 
