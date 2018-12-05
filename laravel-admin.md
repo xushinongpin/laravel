@@ -583,9 +583,29 @@ config/admin.php
             ]
         ]
     ]
-    
+
 form表单使用
     $form->simditor('content');
+```
+
+二十六： jxlwqq/star-rating 
+
+```
+composer require jxlwqq/star-rating
+php artisan vendor:publish --tag=laravel-admin-star-rating
+
+config/admin.php
+    'extensions' => [
+         'star-rating' => [
+             // set to false if you want to disable this extension
+             'enable' => true,
+             
+             // configuration
+             'config' => [
+                 'min' => 1, 'max' => 5, 'step' => 1, 'size' => 'xs'
+             ]
+         ]
+     ]
 ```
 
 
