@@ -684,7 +684,7 @@ form表单中：
     $grid->picture()->lightbox(['width' => 50, 'height' => 50]);
     $grid->picture()->gallery(['width' => 50, 'height' => 50]);
 
-三十一： laravel-admin-ext/sparkline
+三十一： laravel-admin-ext/sparkline  还有其他6种图表类型，如酒吧，饼图，盒子，三态，子弹，离散，所有选项都可以在jQuery sparkline的[官方文档](https://omnipotent.net/jquery.sparkline)中找到。
 
     composer require laravel-admin-ext/sparkline
     php artisan vendor:publish --tag=laravel-admin-sparkline
