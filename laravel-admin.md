@@ -377,6 +377,19 @@ form表单中使用：
             ],
         ],
 
+    app/Admin/bootstrap.php
+        Encore\Admin\Form::extend('media', \Encore\FileBrowser\FileBrowserField::class);
+
+    直接调用就可以了,path选项可以指定目录,否则将使用默认根目录。
+        $form->media('ColumnName', 'LabelName')->path('uploads');
+        $form->media('ColumnName', 'LabelName')->path('uploads/images');
+
+
+    本扩展不支持识别目录(即文件夹)，仅识别path设定的一级目录下的所有文件； 2，本扩展默认可多选，字段存为json字符串，模型文件需添加如下修改器：
+        public function getImagesAttribute($v)
+        {
+            return json_decode($v, true);
+        }
 
 
 
