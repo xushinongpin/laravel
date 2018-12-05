@@ -524,5 +524,28 @@ config/admin.php
     ]
 ```
 
+二十三：  jxlwqq/json-editor
+
+```
+composer require jxlwqq/json-editor
+php artisan vendor:publish --tag=laravel-admin-json-editor
+
+config/admin.php
+    'extensions' => [
+        'json-editor' => [
+            // set to false if you want to disable this extension
+            'enable' => true,
+            'config' =>
+                [
+                    'mode' => 'tree',
+                    'modes' => ['code', 'form', 'text', 'tree', 'view'], // allowed modes
+                ],
+        ]
+    ]
+    
+form表单
+    $form->json('content');
+```
+
 
 
