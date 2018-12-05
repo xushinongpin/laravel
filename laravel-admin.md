@@ -656,7 +656,7 @@ form表单中：
     $form->cropper('content','label')->cRatio($width,$height);//强制剪裁尺寸
 ```
 
-三十： 
+三十：
 
     composer require laravel-admin-ext/grid-lightbox
     php artisan vendor:publish --tag=laravel-admin-grid-lightbox
@@ -668,6 +668,21 @@ form表单中：
                 'enable' => true,
             ]
         ]
+
+    使用方法：
+    // simple lightbox
+    $grid->picture()->lightbox();
+
+    //gallery
+    $grid->picture()->gallery();
+
+    //zoom effect
+    $grid->picture()->lightbox(['zooming' => true]);
+    $grid->picture()->gallery(['zooming' => true]);
+
+    //width & height properties
+    $grid->picture()->lightbox(['width' => 50, 'height' => 50]);
+    $grid->picture()->gallery(['width' => 50, 'height' => 50]);
 
 
 
