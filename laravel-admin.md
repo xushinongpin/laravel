@@ -21,3 +21,58 @@ app/Admin
 
 
 
+## **安装扩展**
+
+① laravel-admin-ext/helpers
+
+```
+$ composer require laravel-admin-ext/helpers
+
+$ php artisan admin:import helpers
+```
+
+② laravel-admin-ext/log-viewer
+
+```
+$ composer require laravel-admin-ext/log-viewer -vvv
+
+$ php artisan admin:import log-viewer
+```
+
+③ laravel-admin-ext/backup
+
+```
+$ composer require laravel-admin-ext/backup -vvv
+
+$ php artisan admin:import backup
+```
+
+④ laravel-admin-ext/config
+
+```
+$ composer require laravel-admin-ext/config
+
+$ php artisan migrate
+
+修改
+app/Providers/AppServiceProvider.php
+    <?php
+    
+    namespace App\Providers;
+    
+    use Encore\Admin\Config\Config;
+    use Illuminate\Support\ServiceProvider;
+    
+    class AppServiceProvider extends ServiceProvider
+    {
+        public function boot()
+        {
+            Config::load();
+        }
+    }
+
+$  php artisan admin:import config
+```
+
+
+
