@@ -722,5 +722,13 @@ form表单中：
                 ->body(new Box('Bar chart', view('admin.sparkline.bar')));
         }
 
+        如果列分数返回具有数组类型的值，并且您希望将此列显示为内联线图
+            $grid->scores()->sparkline('line');
+            // add options
+            $grid->scores()->sparkline('line', [
+                'width' => 100,
+                'spotRadius' => 2
+            ]);
+
 
 
