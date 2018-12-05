@@ -452,6 +452,14 @@ php artisan vendor:publish --tag=laravel-admin-material-ui
 update
     composer update jxlwqq/material-ui
     php artisan vendor:publish --tag=laravel-admin-material-ui --force
+    
+config/admin.php
+    'extensions' => [
+        'material-ui' => [
+            // If the value is set to false, this extension will be disabled
+            'enable' => true
+        ]
+    ]
 ```
 
 
