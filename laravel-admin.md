@@ -19,8 +19,6 @@ app/Admin
 
 前端静态文件位于 /public/packages/admin
 
-
-
 ## **安装扩展**
 
 ① laravel-admin-ext/helpers
@@ -57,12 +55,12 @@ $ php artisan migrate
 修改
 app/Providers/AppServiceProvider.php
     <?php
-    
+
     namespace App\Providers;
-    
+
     use Encore\Admin\Config\Config;
     use Illuminate\Support\ServiceProvider;
-    
+
     class AppServiceProvider extends ServiceProvider
     {
         public function boot()
@@ -73,6 +71,48 @@ app/Providers/AppServiceProvider.php
 
 $  php artisan admin:import config
 ```
+
+⑤ laravel-admin-ext/api-tester
+
+```
+$ composer require laravel-admin-ext/api-tester -vvv
+
+$ php artisan vendor:publish --tag=api-tester
+
+$ php artisan admin:import api-tester
+
+config/admin.php
+    'extensions' => [
+    
+        'api-tester' => [
+        
+            // route prefix for APIs
+            'prefix' => 'api',
+
+            // auth guard for api
+            'guard'  => 'api',
+
+            // If you are not using the default user model as the authentication model, set it up
+            'user_retriever' => function ($id) {
+                return \App\User::find($id);
+            },
+        ]
+    ]
+```
+
+⑥ laravel-admin-ext/media-manager
+
+    $ composer require laravel-admin-ext/media-manager -vvv
+
+    $ php artisan admin:import media-manager
+
+    config/admin.php
+        'extensions' => [
+            'media-manager' => [
+                // Select a local disk that you configured in `config/filesystem.php`
+                'disk' => 'public'
+            ],
+        ],
 
 
 
