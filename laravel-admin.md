@@ -757,7 +757,7 @@ from中使用
     $form->python('code')->version(2);
 ```
 
-三十三： 
+三十三：laravel-admin-ext/php-editor
 
 ```
 composer require laravel-admin-ext/php-editor
@@ -767,13 +767,13 @@ config/admin.php
     'extensions' => [
 
         'php-editor' => [
-        
+
             //Set to false if you want to disable this extension
             'enable' => true,
-            
+
             // Editor configuration
             'config' => [
-                
+
             ]
         ]
     ]
@@ -782,6 +782,33 @@ from表单
     $form->php('code');
     $form->php('code')->height(500);
 ```
+
+三十四：laravel-admin-ext/js-editor 
+
+    composer require laravel-admin-ext/js-editor
+    php artisan vendor:publish --tag=laravel-admin-code-mirror
+
+    config/admin.php
+        'extensions' => [
+            'js-editor' => [
+                // Set to false if you want to disable this extension
+                'enable' => true,
+
+                // Editor configuration
+                'config' => [
+
+                ]
+            ]
+        ]
+
+    form表单中：
+        $form->js('code');
+        // alias of `js` method
+        $form->javascript('code');
+        $form->json('code');
+        $form->jsond('code');
+        $form->typescript('code');
+        $form->js('code')->height(500);//设置高度
 
 
 
