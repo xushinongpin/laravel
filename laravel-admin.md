@@ -443,5 +443,16 @@ app/Admin/bootstrap.php
     $form->largefile('ColumnName', 'LabelName');
 ```
 
+二十：  jxlwqq/material-ui
+
+```
+composer require jxlwqq/material-ui
+php artisan vendor:publish --tag=laravel-admin-material-ui
+
+update
+    composer update jxlwqq/material-ui
+    php artisan vendor:publish --tag=laravel-admin-material-ui --force
+```
+
 
 
