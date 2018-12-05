@@ -867,7 +867,7 @@ config：
     ]
 ```
 
-三十七 laravel-admin-ext/chartjs
+三十七 laravel-admin-ext/chartjs  [文档地址](http://www.chartjs.org/)
 
     composer require laravel-admin-ext/chartjs
     php artisan vendor:publish --tag=laravel-admin-chartjs
