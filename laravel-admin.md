@@ -179,5 +179,35 @@ $ composer require laravel-admin-ext/redis-manager
 $ php artisan admin:import redis-manager
 ```
 
+⑩  laravel-admin-ext/wang-editor [wangEditor文档](https://www.kancloud.cn/wangfupeng/wangeditor3/335776) 与 [上传图片](https://www.kancloud.cn/wangfupeng/wangeditor3/335782)
+
+```
+composer require laravel-admin-ext/wang-editor
+php artisan vendor:publish --tag=laravel-admin-wangEditor
+
+config/admin.php
+    'extensions' => [
+
+        'wang-editor' => [
+        
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+            
+            // 编辑器的配置
+            'config' => [
+                
+            ]
+        ]
+    ]
+    
+编辑器的配置可以到wangEditor文档找到，比如配置上传图片的地址上传图片
+    'config' => [
+        'uploadImgServer' => '/upload'
+    ]
+    
+在form表单中使用它：
+    $form->editor('content');
+```
+
 
 
