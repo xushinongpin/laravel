@@ -408,13 +408,13 @@ config/admin.php
     'extensions' => [
 
         'ckeditor' => [
-        
+
             //Set to false if you want to disable this extension
             'enable' => true,
-            
+
             // Editor configuration
             'config' => [
-                
+
             ]
         ]
     ]
@@ -423,6 +423,11 @@ The configuration of the editor can be found in CKEditor Documentation, such as 
         'lang'   => 'zh-CN',
         'height' => 500,
     ]
+    
+from表单使用
+    $form->ckeditor('content');
+    // Set config
+    $form->ckeditor('content')->options(['lang' => 'fr', 'height' => 500]);
 ```
 
 
