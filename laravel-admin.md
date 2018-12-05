@@ -743,10 +743,18 @@ config/admin.php
             'enable' => true,
             // Editor configuration
             'config' => [
-                
+
             ]
         ]
     ]
+    
+from中使用
+    $form->python('code');
+    设置高
+    $form->python('code')->height(500);
+
+    // Set python version，defaults t 3
+    $form->python('code')->version(2);
 ```
 
 
