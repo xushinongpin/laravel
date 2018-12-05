@@ -970,5 +970,38 @@ config：
         // multilpe column
         $form->daterangepicker(['created_at', 'updated_at'], 'Date range');
 
+三十九 laravel-admin-ext/clike-editor  [更多配置](https://codemirror.net/)
+
+```
+composer require laravel-admin-ext/clike-editor
+php artisan vendor:publish --tag=laravel-admin-code-mirror
+
+config/admin.php
+    'extensions' => [
+
+        'clike-editor' => [
+        
+            // 如果要关掉这个扩展，设置为false
+            'enable' => true,
+            
+            // 编辑器的配置
+            'config' => [
+                
+            ]
+        ]
+    ]
+    
+form表单
+    $form->clang('code');
+    $form->cpp('code');
+    $form->csharp('code');
+    $form->java('code');
+    $form->objectivec('code');
+    $form->scala('code');
+    $form->kotlin('code');
+    $form->ceylon('code');
+    $form->clang('code')->height(500);//设置高度
+```
+
 
 
