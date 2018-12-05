@@ -618,5 +618,24 @@ composer require jxlwqq/code-mirror
 php artisan vendor:publish --tag=laravel-admin-code-mirror
 ```
 
+二十八： laravel-admin-ext/phpinfo 
+
+    composer require laravel-admin-ext/phpinfo
+    php artisan admin:import phpinfo
+
+    config/admin.php
+            'extensions' => [
+                'phpinfo' => [
+                    // Set this to false if you want to disable this extension
+                    'enable' => true,
+
+                    // What information to show，see http://php.net/manual/en/function.phpinfo.php#refsect1-function.phpinfo-parameters
+                    'what' => INFO_ALL,
+
+                    // Set access path，defaults to `phpinfo`
+                    //'path' => '~phpinfo',
+                ]
+            ]
+
 
 
