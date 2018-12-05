@@ -301,5 +301,12 @@ form中使用：
             'middleware'    => ['web', 'admin', 'admin.lock'],
         ],
 
+十四：  laravel-admin-ext/media-player
+
+```
+composer require laravel-admin-ext/media-player
+php artisan vendor:publish --tag=laravel-admin-media-player
+```
+
 
 
