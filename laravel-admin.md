@@ -747,7 +747,7 @@ config/admin.php
             ]
         ]
     ]
-    
+
 from中使用
     $form->python('code');
     设置高
@@ -755,6 +755,32 @@ from中使用
 
     // Set python version，defaults t 3
     $form->python('code')->version(2);
+```
+
+三十三： 
+
+```
+composer require laravel-admin-ext/php-editor
+php artisan vendor:publish --tag=laravel-admin-code-mirror
+
+config/admin.php
+    'extensions' => [
+
+        'php-editor' => [
+        
+            //Set to false if you want to disable this extension
+            'enable' => true,
+            
+            // Editor configuration
+            'config' => [
+                
+            ]
+        ]
+    ]
+
+from表单
+    $form->php('code');
+    $form->php('code')->height(500);
 ```
 
 
