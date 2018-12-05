@@ -364,5 +364,12 @@ form表单中使用：
     $form->markdown('content');
 ```
 
+十六：  laravel-admin-ext/file-browser
+
+```
+composer require laravel-admin-ext/file-browser
+php artisan admin:import media-manager  //发布media-manager的文件(如已发布，可跳过),否则会报错
+```
+
 
 
