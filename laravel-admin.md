@@ -126,10 +126,49 @@ app/Console/Kernel.php
         protected function schedule(Schedule $schedule)
         {
             $schedule->command('inspire')->everyTenMinutes();
-            
+
             $schedule->command('route:list')->dailyAt('02:00');
         }
     }
+```
+
+⑧ laravel-admin-ext/reporter
+
+```
+$ composer require laravel-admin-ext/reporter -vvv
+
+$ php artisan vendor:publish --tag=laravel-admin-reporter
+
+$ php artisan migrate --path=vendor/laravel-admin-ext/reporter/database/migrations
+
+$ php artisan admin:import reporter
+
+app/Exceptions/Handler.php
+    <?php
+        namespace App\Exceptions;
+        
+        use Encore\Admin\Reporter\Reporter;
+        use Exception;
+        use Illuminate\Auth\AuthenticationException;
+        use Illuminate\Validation\ValidationException;
+        use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+        
+        class Handler extends ExceptionHandler
+        {
+            ...
+        
+            public function report(Exception $exception)
+            {
+                if ($this->shouldReport($exception)) {
+                    Reporter::report($exception);
+                }
+        
+        //        parent::report($exception);
+            }
+            
+            ...
+        
+        }
 ```
 
 
