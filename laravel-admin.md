@@ -272,7 +272,7 @@ config/admin.php
             // 如果要关掉这个扩展，设置为false
             'enable' => true,
         ]
-        
+
 form中使用：
     $form->distpicker(['province_id', 'city_id', 'district_id']);
 可以设置每个字段的placeholder
@@ -288,6 +288,18 @@ form中使用：
 表单提交的时候，默认是使用地域名称作为表单值提交，如果你要提交地域编码，使用下面的方法：
     $form->distpicker(['province_id', 'city_id', 'district_id'])->attribute('data-value-type', 'code');
 ```
+
+十三：  laravel-admin-ext/lock-screen
+
+    composer require laravel-admin-ext/lock-screen
+
+    config/admin.php
+        'route' => [
+            'prefix' => 'demo',
+            'namespace'     => 'App\\Admin\\Controllers',
+            // add middleware `admin.lock` into this array.
+            'middleware'    => ['web', 'admin', 'admin.lock'],
+        ],
 
 
 
