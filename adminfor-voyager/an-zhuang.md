@@ -14,12 +14,26 @@ composer require tcg/voyager
 默认账号密码：
   email: admin@admin.com
   password: password
-  
+
 php artisan voyager:admin your@email.com【php artisan voyager:admin your@email.com --create】
 
 发布资产
   php artisan vendor:publish --provider=VoyagerServiceProvider
   php artisan vendor:publish --provider=ImageServiceProviderLaravel5
+  
+config/app.php  【 TCG\Voyager\VoyagerServiceProvider::class, 】
+  providers
+    'providers' => [
+        // Laravel Framework Service Providers...
+        //...
+    ​
+        // Package Service Providers
+        TCG\Voyager\VoyagerServiceProvider::class,
+        // ...
+    ​
+        // Application Service Providers
+        // ...
+    ],
 ```
 
 ①先创建laravel程序
