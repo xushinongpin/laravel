@@ -1,3 +1,21 @@
+主要操作命令等
+
+```
+composer require tcg/voyager
+ .env
+  APP_URL=http://localhost
+  DB_HOST=localhost
+  DB_DATABASE=homestead
+  DB_USERNAME=homestead
+  DB_PASSWORD=secret
+安装
+  php artisan voyager:install 【php artisan voyager:install --with-dummy 需要有模拟数据使用这个】
+```
+
+
+
+
+
 ①先创建laravel程序
 
 ```
