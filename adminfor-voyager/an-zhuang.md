@@ -10,11 +10,11 @@ composer require tcg/voyager
   DB_PASSWORD=secret
 安装
   php artisan voyager:install 【php artisan voyager:install --with-dummy 需要有模拟数据使用这个】
+  
+默认账号密码：
+  email: admin@admin.com
+  password: password
 ```
-
-
-
-
 
 ①先创建laravel程序
 
