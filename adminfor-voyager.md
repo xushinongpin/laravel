@@ -20,3 +20,5 @@ Voyager不是CMS或博客平台。但它可以用来创建一个CMS或博客平�
 
 官方网址： [https://voyager.readme.io/docs/](https://voyager.readme.io/docs/)
 
+github  ： https://github.com/the-control-group/voyager
+
