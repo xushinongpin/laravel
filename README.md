@@ -1,4 +1,6 @@
-GitHub地址： https://github.com/xushinongpin/laravel
+GitHub地址： [https://github.com/xushinongpin/laravel](https://github.com/xushinongpin/laravel)
+
+下载laravel： laravel new routing-app【 方法1 】
 
 # 该使用享元模式的时候使用享元模式【可能多个同时调用，做个享元模式（池容器）对服务器性能有帮助】
 
