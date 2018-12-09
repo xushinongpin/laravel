@@ -16,3 +16,11 @@ php artisan
 
 make:migration 【 生成表框架， database/migrations 里面 】
 
+```
+Schema::create ......  创建表
+
+Schema::table  ......  更新表
+```
+
+
+
