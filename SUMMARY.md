@@ -58,4 +58,5 @@
   * [Controller](wen-gu-er-zhi-xin/controller.md)
   * [数据库](wen-gu-er-zhi-xin/shu-ju-ku.md)
   * [Model](wen-gu-er-zhi-xin/model.md)
+  * [tinker](wen-gu-er-zhi-xin/tinker.md)
 
