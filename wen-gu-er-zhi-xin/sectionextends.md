@@ -6,11 +6,10 @@
 
 &lt;title&gt;@yield\('title','我是备胎'\)&lt;/title&gt;  当引入模板中没有定义标题，则这里默认显示副标题
 
-    &lt;meta name="description" content="@yield\('description','Laravel - The PHP framework for web artisans.'\)"&gt; 同理
-
-    &lt;meta name="keywords" content="@yield\('keywords','laravel, php, framework, web, artisans, taylor otwell'\)"&gt;同理
-
-
+```
+    <meta name="description" content="@yield('description','Laravel - The PHP framework for web artisans.')">同理
+    <meta name="keywords" content="@yield('keywords','laravel, php, framework, web, artisans, taylor otwell')">同理
+```
 
 例子：
 
