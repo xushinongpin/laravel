@@ -1,13 +1,25 @@
 @section\('title','我是主标题'\)
 
+@section\('description','what'\)
+
+@section\('keywords','a,b,c'\)
+
+
+
 &lt;title&gt;@yield\('title','我是备胎'\)&lt;/title&gt;  当引入模板中没有定义标题，则这里默认显示副标题
+
+    &lt;meta name="description" content="@yield\('description','Laravel - The PHP framework for web artisans.'\)"&gt; 同理
+
+    &lt;meta name="keywords" content="@yield\('keywords','laravel, php, framework, web, artisans, taylor otwell'\)"&gt; 同理
 
 例子：
 
 ```
 home.blade.php
     @extends('layouts.app')
-    @section('title','qazxswedcvfr')
+    @section('title','my title')
+    @section('description','what')
+    @section('keywords','a,b,c')
     @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -29,6 +41,7 @@ home.blade.php
         </div>
     </div>
     @endsection
+    
 
 layouts/app.blade.php
     <!DOCTYPE html>
@@ -42,7 +55,8 @@ layouts/app.blade.php
     
         {{--<title>{{ config('app.name', 'Laravel') }}</title>--}}
         <title>@yield('title','qwe')</title>
-    
+        <meta name="description" content="@yield('description','Laravel - The PHP framework for web artisans.')">
+        <meta name="keywords" content="@yield('keywords','laravel, php, framework, web, artisans, taylor otwell')">
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     
