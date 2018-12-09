@@ -14,5 +14,5 @@ php artisan
   migrate:status        Show the status of each migration
 ```
 
-
+make:migration 【 生成表框架， database/migrations 里面 】
 
