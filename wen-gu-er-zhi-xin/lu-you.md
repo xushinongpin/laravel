@@ -23,5 +23,11 @@ Route::get('/', function () {
 });
 ```
 
+控制器路由
+
+```
+Route::resource('/projects','ProjectsController');
+```
+
 
 
