@@ -57,4 +57,5 @@
   * [路由](wen-gu-er-zhi-xin/lu-you.md)
   * [Controller](wen-gu-er-zhi-xin/controller.md)
   * [数据库](wen-gu-er-zhi-xin/shu-ju-ku.md)
+  * [Model](wen-gu-er-zhi-xin/model.md)
 
