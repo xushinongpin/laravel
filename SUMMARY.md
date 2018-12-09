@@ -55,4 +55,5 @@
   * [section，extends](wen-gu-er-zhi-xin/sectionextends.md)
   * [ 与 {!! $a !!} 的区别](wen-gu-er-zhi-xin/yu-a-de-qu-bie.md)
   * [路由](wen-gu-er-zhi-xin/lu-you.md)
+  * [Controller](wen-gu-er-zhi-xin/controller.md)
 
