@@ -1,4 +1,4 @@
-命令行
+命令行敲命令
 
 ```
 php artisan tinker
@@ -18,7 +18,7 @@ php artisan tinker
          },
        ],
      }
-  >>>                         
+  >>>
 ```
 
 
