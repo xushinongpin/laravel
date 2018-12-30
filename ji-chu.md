@@ -1,6 +1,8 @@
 # 基本操作方法命令
 
 ```
+
+    composer update  // 更新项目【一般下载新的项目没有带上扩展的，需要更新才有】
 env文件
     重新生成app_key    php artisan key:generate
 ```
