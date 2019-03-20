@@ -49,6 +49,7 @@
   * [Compass](adminfor-voyager/compass.md)
   * [角色和权限](adminfor-voyager/jiao-se-he-quan-xian.md)
   * [缩略图网址](adminfor-voyager/suo-lve-tu-wang-zhi.md)
+  * [sql报错](adminfor-voyager/sqlbao-cuo.md)
 * [vue](vue.md)
 * [laravel-admin](laravel-admin.md)
 * [温故而知新](wen-gu-er-zhi-xin.md)
