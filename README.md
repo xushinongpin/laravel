@@ -2,6 +2,20 @@ GitHub地址： [https://github.com/xushinongpin/laravel](https://github.com/xus
 
 下载laravel： laravel new routing-app【 方法1 】
 
+[编辑](https://legacy.gitbook.com/book/xushinongpinseo/laravel/edit#/edit/master/README.md?_k=wn1vzy)
+
+## Laravel 有着怎样的版本计划？
+
+| 版本 | 发布日期 | 版本类型 | 维护周期 |
+| :--- | :--- | :--- | :--- |
+| Laravel 5.1 | 2015 年 6 月 | LTS 长久支持 | Bug 修复 2017 年 6 月份，安全修复 2018 年 6 月份 |
+| Laravel 5.2 | 2015 年 12 月 | 一般发行 | 提供 6 个月的 Bug 修复支持，一年的安全修复支持 |
+| Laravel 5.3 | 2016 年 8 月 | 一般发行 | 提供 6 个月的 Bug 修复支持，一年的安全修复支持 |
+| Laravel 5.4 | 2017 年 1 月 | 一般发行 | 提供 6 个月的 Bug 修复支持，一年的安全修复支持 |
+| Laravel 5.5 | 2017 年 8 月 | LTS 长久支持 | Bug 修复 2019 年 8 月份，安全修复 2020 年 8 月份 |
+| Laravel 5.6 | 2018 年 2 月 | 一般发行 | 提供 6 个月的 Bug 修复支持，一年的安全修复支持 |
+| Laravel 5.7 | 2018 年 8 月 | 一般发行 | 提供 6 个月的 Bug 修复支持，一年的安全修复支持 |
+
 # 该使用享元模式的时候使用享元模式【可能多个同时调用，做个享元模式（池容器）对服务器性能有帮助】
 
 eg:
