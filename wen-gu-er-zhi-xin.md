@@ -8,5 +8,12 @@
 5. 替换位置数据 @section('title', '首页') ... @section('content') ... @stop //最终需要一个结束stop即可
 ```
 
+# 路由
+
+```
+路由末尾记得添加 ->name('xxx'); 这样有有利于固定地址
+1.  {{ route('xxx') }}
+```
+
 
 
