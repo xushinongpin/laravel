@@ -6,6 +6,7 @@
 3. 引入框架vue的js/css方法 {{ mix('js/app.js') }} / {{ mix('css/app.css') }}
 4. 引入主框架   @extends('layouts.app')
 5. 替换位置数据 @section('title', '首页') ... @section('content') ... @stop //最终需要一个结束stop即可
+6. 判断是否已登录 【 未登录@guest ...未登录显示东西 ... @else ...已登录东西 ... @endguest 】
 ```
 
 # 路由
