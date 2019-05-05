@@ -13,7 +13,7 @@
 
 ```
 1. 路由末尾记得添加 ->name('xxx'); 这样有有利于固定地址 模板调用 {{ route('xxx') }}
-2. 权限 ->middleware('verified'); 必须登录权限
+2. 权限 ->middleware('verified'); 必须邮箱验证
 ```
 
 
