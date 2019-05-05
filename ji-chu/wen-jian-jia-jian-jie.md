@@ -1,5 +1,3 @@
-
-
 ## Laravel 有着怎样的版本计划？
 
 | 版本 | 发布日期 | 版本类型 | 维护周期 |
@@ -107,6 +105,8 @@ Client::main($argv);
 
 破解文件放到 \JetBrains\PhpStorm 2018.1.6\lib目录下
 
+其他[证书获取地址](https://gist.github.com/shanezhiu/815590f573b738cc80e94d55143f6db2)
+
 window上 [Composer安装](https://getcomposer.org/Composer-Setup.exe)
 
 nodejs的[npm使用](https://nodejs.org/zh-cn/download/)
@@ -152,8 +152,6 @@ location / {
 地址解析要解析到 /public 该目录。该public目录包含文件，该文件是进入应用程序并配置自动加载的所有请求的入口点。
 
 storage目录：权限要分配为777，不然会写缓存日志会失败导致报错 【 修改方法：chmod 777 storage -R 】
-
-
 
 Laravel 文件夹结构简介
 
