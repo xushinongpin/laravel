@@ -7,6 +7,7 @@
 4. 引入主框架   @extends('layouts.app')
 5. 替换位置数据 @section('title', '首页') ... @section('content') ... @stop //最终需要一个结束stop即可
 6. 判断是否已登录 【 未登录@guest ...未登录显示东西 ... @else ...已登录东西 ... @endguest 】
+7. 遍历 @foreach($aas as $aa)  {{ $aa->bb }}  @endforeach
 ```
 
 # 路由
