@@ -18,5 +18,17 @@
 3. auth 必须登录权限
 ```
 
+# 模型
+
+```
+一对多 eg: $this->hasMany(UserAddress::class);
+```
+
+# 控制器
+
+```
+$request 调用模型的方法 eg: $request->user()->addresses . user模型添加 addresses方法即可
+```
+
 
 
