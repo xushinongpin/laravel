@@ -23,5 +23,13 @@ ong")
         Schema::defaultStringLength(191);
     }
 
+解决方案三【 主要解决方案 】
+
+\[mysqld\] 下 添加 
+
+```
+default-storage-engine=InnoDB
+```
+
 
 
