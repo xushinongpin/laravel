@@ -52,6 +52,7 @@
   * [角色和权限](adminfor-voyager/jiao-se-he-quan-xian.md)
   * [缩略图网址](adminfor-voyager/suo-lve-tu-wang-zhi.md)
   * [覆盖模型](adminfor-voyager/fu-gai-mo-xing.md)
+  * [修改器与访问器](adminfor-voyager/xiu-gai-qi-yu-fang-wen-qi.md)
 * [vue](vue.md)
 * [laravel-admin](laravel-admin.md)
 * [温故而知新](wen-gu-er-zhi-xin.md)
